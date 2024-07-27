@@ -1,0 +1,4009 @@
+{
+  "dates": {
+    "2024-07-22": {
+      "19": "693",
+      "96": "2719",
+      "232": "1366",
+      "421": "3095",
+      "748": "2156",
+      "827": "573",
+      "1166": "3622",
+      "1234": "2507",
+      "1339": "851",
+      "1346": "194",
+      "1373": "2789",
+      "1426": "2588",
+      "1466": "3943",
+      "1479": "2948",
+      "1689": "1610",
+      "1837": "657",
+      "2028": "2419",
+      "2078": "861",
+      "2133": "3937",
+      "2197": "1898",
+      "2212": "9999",
+      "2216": "3802",
+      "2306": "1131",
+      "2309": "3487",
+      "2374": "2284",
+      "2449": "3400",
+      "2711": "274",
+      "2749": "2578",
+      "3163": "5122",
+      "3164": "1909",
+      "3198": "3553",
+      "3199": "296",
+      "3202": "287",
+      "3214": "1635",
+      "3225": "1600",
+      "3257": "1573",
+      "3271": "1106",
+      "3286": "1222",
+      "3294": "5621",
+      "3321": "6142",
+      "3634": "699",
+      "3976": "212",
+      "4017": "3591",
+      "4018": "3356",
+      "4029": "287",
+      "4033": "3220",
+      "4034": "6809",
+      "4035": "3117",
+      "4037": "3434",
+      "4039": "3597",
+      "4040": "831",
+      "4046": "9991",
+      "4054": "350",
+      "4066": "3231",
+      "4080": "1507",
+      "4082": "2453",
+      "4089": "917",
+      "4111": "1294",
+      "4137": "2756",
+      "4144": "1452",
+      "4147": "822",
+      "4149": "793",
+      "4171": "1244",
+      "4177": "251",
+      "4179": "770",
+      "4197": "361",
+      "4199": "2827",
+      "4217": "3407",
+      "4234": "1174",
+      "4351": "653",
+      "4381": "1374",
+      "4454": "1424",
+      "4634": "4674",
+      "4663": "2282",
+      "4844": "1791",
+      "4866": "5031",
+      "4881": "8510",
+      "4892": "3692",
+      "4943": "2103",
+      "4950": "3669",
+      "4951": "1497",
+      "4961": "4971",
+      "4972": "446",
+      "4973": "962",
+      "4981": "3106",
+      "4985": "464",
+      "4988": "2783",
+      "4993": "1413",
+      "5000": "475",
+      "5001": "2676",
+      "5010": "865",
+      "5012": "4668",
+      "5022": "2583",
+      "5038": "992",
+      "5045": "2682",
+      "5046": "385",
+      "5086": "823",
+      "5113": "480",
+      "5121": "267",
+      "5133": "1392",
+      "5137": "214",
+      "5154": "195",
+      "5185": "644",
+      "5248": "2377",
+      "5284": "635",
+      "5347": "648",
+      "5374": "613",
+      "5409": "224",
+      "5695": "513",
+      "5844": "4391",
+      "5846": "5185",
+      "5848": "3215",
+      "5849": "7010",
+      "5850": "3994",
+      "5854": "1340",
+      "5857": "1796",
+      "5859": "6753",
+      "5870": "2883",
+      "5872": "4417",
+      "5880": "742",
+      "5892": "3211",
+      "5906": "1601",
+      "5917": "930",
+      "5927": "3567",
+      "5937": "3295",
+      "5938": "263",
+      "5947": "2607",
+      "5955": "481",
+      "5967": "2971",
+      "5970": "1584",
+      "5973": "279",
+      "5985": "692",
+      "5987": "1421",
+      "5995": "1228",
+      "6001": "260",
+      "6011": "2250",
+      "6039": "752",
+      "6074": "963",
+      "6111": "1245",
+      "6126": "831",
+      "6130": "2629",
+      "6136": "896",
+      "6144": "714",
+      "6149": "1345",
+      "6151": "1098",
+      "6234": "452",
+      "6271": "369",
+      "6290": "430",
+      "6421": "620",
+      "6598": "380",
+      "6659": "427",
+      "6694": "611",
+      "6768": "5402",
+      "6770": "7867",
+      "6783": "2661",
+      "6786": "9206",
+      "6790": "3490",
+      "6794": "9611",
+      "6797": "7198",
+      "6801": "4850",
+      "6803": "5636",
+      "6804": "7274",
+      "6805": "812",
+      "6806": "2105",
+      "6813": "5719",
+      "6814": "625",
+      "6819": "5003",
+      "6820": "1315",
+      "6824": "1038",
+      "6826": "2680",
+      "6828": "1313",
+      "6843": "549",
+      "6845": "2837",
+      "6847": "743",
+      "6849": "649",
+      "6850": "363",
+      "6853": "1045",
+      "6865": "1442",
+      "6869": "677",
+      "6886": "957",
+      "6904": "8452",
+      "6918": "383",
+      "6920": "953",
+      "6927": "645",
+      "6931": "482",
+      "6938": "453",
+      "6943": "2281",
+      "6945": "1936",
+      "6951": "442",
+      "6960": "710",
+      "6989": "586",
+      "7002": "1494",
+      "7021": "2080",
+      "7045": "625",
+      "7049": "1349",
+      "7066": "1303",
+      "7083": "717",
+      "7090": "2074",
+      "7496": "483",
+      "7523": "6204",
+      "7525": "5597",
+      "7526": "6085",
+      "7527": "1094",
+      "7528": "3189",
+      "7533": "504",
+      "7535": "363",
+      "7538": "887",
+      "7543": "5302",
+      "7547": "8303",
+      "7553": "5083",
+      "7562": "1422",
+      "7564": "8856",
+      "7565": "780",
+      "7567": "1271",
+      "7568": "1191",
+      "7569": "5643",
+      "7571": "2130",
+      "7585": "567",
+      "7587": "894",
+      "7588": "2876",
+      "7591": "2688",
+      "7593": "1335",
+      "7594": "2008",
+      "7595": "448",
+      "7596": "1675",
+      "7600": "2876",
+      "7601": "1691",
+      "7602": "638",
+      "7605": "633",
+      "7606": "758",
+      "7607": "899",
+      "7608": "1894",
+      "7610": "1546",
+      "7611": "3600",
+      "7670": "2563",
+      "7694": "764",
+      "7713": "316",
+      "7720": "399",
+      "7757": "372",
+      "7794": "1062",
+      "7828": "1148",
+      "7891": "566",
+      "8110": "3251",
+      "8111": "2079",
+      "8112": "6056",
+      "8114": "443",
+      "8116": "797",
+      "8117": "1407",
+      "8118": "900",
+      "8119": "2776",
+      "8121": "2997",
+      "8122": "660",
+      "8123": "628",
+      "8125": "1250",
+      "8126": "2191",
+      "8127": "223",
+      "8129": "1913",
+      "8130": "5495",
+      "8131": "2726",
+      "8132": "2153",
+      "8134": "2846",
+      "8135": "1531",
+      "8136": "4156",
+      "8137": "5015",
+      "8138": "4658",
+      "8139": "3388",
+      "8140": "704",
+      "8142": "1442",
+      "8143": "2774",
+      "8144": "5957",
+      "8145": "810",
+      "8146": "6925",
+      "8147": "1392",
+      "8148": "3145",
+      "8150": "4980",
+      "8153": "1006",
+      "8154": "3112",
+      "8155": "7320",
+      "8157": "335",
+      "8159": "907",
+      "8160": "1178",
+      "8161": "733",
+      "8162": "2140",
+      "8167": "3467",
+      "8168": "1126",
+      "8171": "593",
+      "8172": "1828",
+      "8174": "623",
+      "8176": "314",
+      "8180": "523",
+      "8183": "6047",
+      "8188": "969",
+      "8195": "478",
+      "8197": "572",
+      "8204": "1403",
+      "8205": "4649",
+      "8207": "443",
+      "8208": "402",
+      "8210": "2038",
+      "8211": "670",
+      "8214": "755",
+      "8219": "1543",
+      "8221": "837",
+      "8225": "1702",
+      "8228": "3250",
+      "8230": "1923",
+      "8249": "294",
+      "8254": "360",
+      "8408": "786",
+      "8489": "361",
+      "8676": "2629",
+      "8800": "869",
+      "8917": "351",
+      "9220": "1424",
+      "9221": "7120",
+      "9222": "1019",
+      "9224": "2785",
+      "9225": "1855",
+      "9226": "5481",
+      "9227": "1094",
+      "9228": "4260",
+      "9229": "7826",
+      "9231": "208",
+      "9479": "1278",
+      "9480": "784",
+      "9481": "2721",
+      "9482": "2302",
+      "9484": "2085",
+      "9486": "3025",
+      "9487": "1379",
+      "9488": "4781",
+      "9489": "840",
+      "9490": "885",
+      "9492": "1692",
+      "9493": "6982",
+      "9494": "2455",
+      "9495": "698",
+      "9497": "2039",
+      "9500": "2979",
+      "9501": "2539",
+      "9502": "5105",
+      "9504": "998",
+      "9505": "1332",
+      "9506": "1062",
+      "9508": "3371",
+      "9509": "8205",
+      "9511": "2342",
+      "9512": "991",
+      "9753": "2989",
+      "9754": "2410",
+      "9756": "4218",
+      "9757": "2828",
+      "9758": "9308",
+      "9997": "4948",
+      "9998": "1288",
+      "9999": "3774",
+      "10210": "620",
+      "10212": "267",
+      "10213": "1319",
+      "10214": "963",
+      "10216": "686",
+      "10218": "1015",
+      "10219": "1381",
+      "10220": "483",
+      "10221": "768",
+      "10222": "4301",
+      "10223": "1327",
+      "10225": "1604",
+      "10226": "1302",
+      "10228": "756",
+      "10229": "4021",
+      "10231": "620",
+      "10232": "2385",
+      "10234": "843",
+      "10235": "2173",
+      "10236": "5371",
+      "10444": "1463",
+      "10857": "638",
+      "10859": "6802",
+      "10860": "541",
+      "10862": "761",
+      "10863": "1623",
+      "10866": "2103",
+      "10867": "773",
+      "10870": "671",
+      "10871": "1493",
+      "11199": "820",
+      "11210": "499",
+      "11256": "530",
+      "11292": "228",
+      "11306": "1487",
+      "11311": "477",
+      "11370": "523",
+      "11435": "569",
+      "11439": "2370",
+      "11557": "948",
+      "11559": "3749",
+      "11560": "7641",
+      "11561": "511",
+      "11562": "1824",
+      "11563": "3722",
+      "11564": "5085",
+      "11565": "4861",
+      "11566": "6634",
+      "11567": "1227",
+      "11568": "1011",
+      "11570": "1569",
+      "11571": "1042",
+      "11574": "1607",
+      "11575": "2137",
+      "11576": "2248",
+      "11577": "1794",
+      "11579": "2387",
+      "11580": "1131",
+      "11581": "2947",
+      "11583": "4828",
+      "11584": "2241",
+      "11586": "3278",
+      "11588": "695",
+      "11589": "3925",
+      "11590": "977",
+      "11592": "1518",
+      "11595": "1403",
+      "11596": "2728",
+      "11597": "1745",
+      "11599": "1408",
+      "11600": "2200",
+      "11603": "608",
+      "11604": "5241",
+      "11610": "1784",
+      "11615": "1077",
+      "11616": "1422",
+      "11617": "2302",
+      "11618": "2269",
+      "11619": "3030",
+      "11620": "5637",
+      "11621": "1619",
+      "11624": "4359",
+      "11625": "3300",
+      "11626": "3255",
+      "11627": "2690",
+      "11628": "8077",
+      "11629": "1823",
+      "11630": "2795",
+      "11631": "4609",
+      "11632": "6592",
+      "11633": "1008",
+      "11635": "4400",
+      "11636": "1215",
+      "11637": "3766",
+      "11638": "3499",
+      "11640": "2786",
+      "11643": "2861",
+      "11645": "2446",
+      "11647": "2395",
+      "11650": "2366",
+      "11651": "1645",
+      "11652": "943",
+      "11655": "2086",
+      "11716": "691",
+      "11729": "1091",
+      "11748": "1201",
+      "11783": "823",
+      "11821": "1067",
+      "2024 Early 1st": "6795",
+      "2025 Early 1st": "5666",
+      "2024 Mid 1st": "5291",
+      "2026 Early 1st": "5039",
+      "2025 Mid 1st": "4858",
+      "2024 Late 1st": "4563",
+      "2026 Mid 1st": "4338",
+      "2025 Late 1st": "4283",
+      "2026 Late 1st": "3858",
+      "2024 Early 2nd": "3519",
+      "2025 Early 2nd": "3264",
+      "2024 Mid 2nd": "3025",
+      "2026 Early 2nd": "2865",
+      "2025 Mid 2nd": "2856",
+      "2024 Late 2nd": "2854",
+      "2025 Late 2nd": "2625",
+      "2026 Mid 2nd": "2624",
+      "2026 Late 2nd": "2344",
+      "2024 Early 3rd": "2234",
+      "2024 Mid 3rd": "2149",
+      "2025 Early 3rd": "2117",
+      "2026 Early 3rd": "1905",
+      "2025 Mid 3rd": "1901",
+      "2024 Late 3rd": "1891",
+      "2025 Late 3rd": "1785",
+      "2026 Mid 3rd": "1723",
+      "2024 Early 4th": "1505",
+      "2026 Late 3rd": "1482",
+      "2024 Mid 4th": "1473",
+      "2025 Early 4th": "1393",
+      "2024 Late 4th": "1345",
+      "2025 Mid 4th": "1315",
+      "2026 Early 4th": "1288",
+      "2025 Late 4th": "1218",
+      "2026 Mid 4th": "1142",
+      "2026 Late 4th": "1056"
+    }
+  },
+  "players": {
+    "19": {
+      "name": "Joe Flacco",
+      "link": "/dynasty-rankings/players/joe-flacco-722",
+      "team": "IND",
+      "position": "QB",
+      "values": { "2024-07-22": "693" }
+    },
+    "96": {
+      "name": "Aaron Rodgers",
+      "link": "/dynasty-rankings/players/aaron-rodgers-235",
+      "team": "NYJ",
+      "position": "QB",
+      "values": { "2024-07-22": "2719" }
+    },
+    "232": {
+      "name": "Frank Gore Jr.",
+      "link": "/dynasty-rankings/players/frank-gore-jr-1570",
+      "team": "BUF",
+      "position": "RB",
+      "values": { "2024-07-22": "1366" }
+    },
+    "421": {
+      "name": "Matthew Stafford",
+      "link": "/dynasty-rankings/players/matthew-stafford-356",
+      "team": "LAR",
+      "position": "QB",
+      "values": { "2024-07-22": "3095" }
+    },
+    "748": {
+      "name": "Mike Williams",
+      "link": "/dynasty-rankings/players/mike-williams-230",
+      "team": "NYJ",
+      "position": "WR",
+      "values": { "2024-07-22": "2156" }
+    },
+    "827": {
+      "name": "Tyrod Taylor",
+      "link": "/dynasty-rankings/players/tyrod-taylor-647",
+      "team": "NYJ",
+      "position": "QB",
+      "values": { "2024-07-22": "573" }
+    },
+    "1166": {
+      "name": "Kirk Cousins",
+      "link": "/dynasty-rankings/players/kirk-cousins-396",
+      "team": "ATL",
+      "position": "QB",
+      "values": { "2024-07-22": "3622" }
+    },
+    "1234": {
+      "name": "Russell Wilson",
+      "link": "/dynasty-rankings/players/russell-wilson-257",
+      "team": "PIT",
+      "position": "QB",
+      "values": { "2024-07-22": "2507" }
+    },
+    "1339": {
+      "name": "Zach Ertz",
+      "link": "/dynasty-rankings/players/zach-ertz-305",
+      "team": "WAS",
+      "position": "TE",
+      "values": { "2024-07-22": "851" }
+    },
+    "1346": {
+      "name": "Marquise Goodwin",
+      "link": "/dynasty-rankings/players/marquise-goodwin-73",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "194" }
+    },
+    "1373": {
+      "name": "Geno Smith",
+      "link": "/dynasty-rankings/players/geno-smith-671",
+      "team": "SEA",
+      "position": "QB",
+      "values": { "2024-07-22": "2789" }
+    },
+    "1426": {
+      "name": "DeAndre Hopkins",
+      "link": "/dynasty-rankings/players/deandre-hopkins-280",
+      "team": "TEN",
+      "position": "WR",
+      "values": { "2024-07-22": "2588" }
+    },
+    "1466": {
+      "name": "Travis Kelce",
+      "link": "/dynasty-rankings/players/travis-kelce-264",
+      "team": "KCC",
+      "position": "TE",
+      "values": { "2024-07-22": "3943" }
+    },
+    "1479": {
+      "name": "Keenan Allen",
+      "link": "/dynasty-rankings/players/keenan-allen-265",
+      "team": "CHI",
+      "position": "WR",
+      "values": { "2024-07-22": "2948" }
+    },
+    "1689": {
+      "name": "Adam Thielen",
+      "link": "/dynasty-rankings/players/adam-thielen-308",
+      "team": "CAR",
+      "position": "WR",
+      "values": { "2024-07-22": "1610" }
+    },
+    "1837": {
+      "name": "Jimmy Garoppolo",
+      "link": "/dynasty-rankings/players/jimmy-garoppolo-395",
+      "team": "LAR",
+      "position": "QB",
+      "values": { "2024-07-22": "657" }
+    },
+    "2028": {
+      "name": "Derek Carr",
+      "link": "/dynasty-rankings/players/derek-carr-85",
+      "team": "NOS",
+      "position": "QB",
+      "values": { "2024-07-22": "2419" }
+    },
+    "2078": {
+      "name": "Odell Beckham",
+      "link": "/dynasty-rankings/players/odell-beckham-279",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "861" }
+    },
+    "2133": {
+      "name": "Davante Adams",
+      "link": "/dynasty-rankings/players/davante-adams-277",
+      "team": "LVR",
+      "position": "WR",
+      "values": { "2024-07-22": "3937" }
+    },
+    "2197": {
+      "name": "Brandin Cooks",
+      "link": "/dynasty-rankings/players/brandin-cooks-307",
+      "team": "DAL",
+      "position": "WR",
+      "values": { "2024-07-22": "1898" }
+    },
+    "2212": {
+      "name": "Josh Allen",
+      "link": "/dynasty-rankings/players/josh-allen-365",
+      "team": "BUF",
+      "position": "QB",
+      "values": { "2024-07-22": "9999" }
+    },
+    "2216": {
+      "name": "Mike Evans",
+      "link": "/dynasty-rankings/players/mike-evans-275",
+      "team": "TBB",
+      "position": "WR",
+      "values": { "2024-07-22": "3802" }
+    },
+    "2306": {
+      "name": "Jameis Winston",
+      "link": "/dynasty-rankings/players/jameis-winston-413",
+      "team": "CLE",
+      "position": "QB",
+      "values": { "2024-07-22": "1131" }
+    },
+    "2309": {
+      "name": "Amari Cooper",
+      "link": "/dynasty-rankings/players/amari-cooper-269",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "3487" }
+    },
+    "2374": {
+      "name": "Tyler Lockett",
+      "link": "/dynasty-rankings/players/tyler-lockett-285",
+      "team": "SEA",
+      "position": "WR",
+      "values": { "2024-07-22": "2284" }
+    },
+    "2449": {
+      "name": "Stefon Diggs",
+      "link": "/dynasty-rankings/players/stefon-diggs-262",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "3400" }
+    },
+    "2711": {
+      "name": "Taylor Heinicke",
+      "link": "/dynasty-rankings/players/taylor-heinicke-977",
+      "team": "ATL",
+      "position": "QB",
+      "values": { "2024-07-22": "274" }
+    },
+    "2749": {
+      "name": "Raheem Mostert",
+      "link": "/dynasty-rankings/players/raheem-mostert-43",
+      "team": "MIA",
+      "position": "RB",
+      "values": { "2024-07-22": "2578" }
+    },
+    "3163": {
+      "name": "Jared Goff",
+      "link": "/dynasty-rankings/players/jared-goff-388",
+      "team": "DET",
+      "position": "QB",
+      "values": { "2024-07-22": "5122" }
+    },
+    "3164": {
+      "name": "Ezekiel Elliott",
+      "link": "/dynasty-rankings/players/ezekiel-elliott-281",
+      "team": "DAL",
+      "position": "RB",
+      "values": { "2024-07-22": "1909" }
+    },
+    "3198": {
+      "name": "Derrick Henry",
+      "link": "/dynasty-rankings/players/derrick-henry-296",
+      "team": "BAL",
+      "position": "RB",
+      "values": { "2024-07-22": "3553" }
+    },
+    "3199": {
+      "name": "Michael Thomas",
+      "link": "/dynasty-rankings/players/michael-thomas-278",
+      "team": "FA",
+      "position": "WR",
+      "values": { "2024-07-22": "296" }
+    },
+    "3202": {
+      "name": "Austin Hooper",
+      "link": "/dynasty-rankings/players/austin-hooper-384",
+      "team": "NEP",
+      "position": "TE",
+      "values": { "2024-07-22": "287" }
+    },
+    "3214": {
+      "name": "Hunter Henry",
+      "link": "/dynasty-rankings/players/hunter-henry-212",
+      "team": "NEP",
+      "position": "TE",
+      "values": { "2024-07-22": "1635" }
+    },
+    "3225": {
+      "name": "Tyler Boyd",
+      "link": "/dynasty-rankings/players/tyler-boyd-231",
+      "team": "TEN",
+      "position": "WR",
+      "values": { "2024-07-22": "1600" }
+    },
+    "3257": {
+      "name": "Jacoby Brissett",
+      "link": "/dynasty-rankings/players/jacoby-brissett-20",
+      "team": "NEP",
+      "position": "QB",
+      "values": { "2024-07-22": "1573" }
+    },
+    "3271": {
+      "name": "Tyler Higbee",
+      "link": "/dynasty-rankings/players/tyler-higbee-159",
+      "team": "LAR",
+      "position": "TE",
+      "values": { "2024-07-22": "1106" }
+    },
+    "3286": {
+      "name": "Demarcus Robinson",
+      "link": "/dynasty-rankings/players/demarcus-robinson-52",
+      "team": "LAR",
+      "position": "WR",
+      "values": { "2024-07-22": "1222" }
+    },
+    "3294": {
+      "name": "Dak Prescott",
+      "link": "/dynasty-rankings/players/dak-prescott-371",
+      "team": "DAL",
+      "position": "QB",
+      "values": { "2024-07-22": "5621" }
+    },
+    "3321": {
+      "name": "Tyreek Hill",
+      "link": "/dynasty-rankings/players/tyreek-hill-286",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "6142" }
+    },
+    "3634": {
+      "name": "Kalif Raymond",
+      "link": "/dynasty-rankings/players/kalif-raymond-822",
+      "team": "DET",
+      "position": "WR",
+      "values": { "2024-07-22": "699" }
+    },
+    "3976": {
+      "name": "Mitchell Trubisky",
+      "link": "/dynasty-rankings/players/mitchell-trubisky-321",
+      "team": "BUF",
+      "position": "QB",
+      "values": { "2024-07-22": "212" }
+    },
+    "4017": {
+      "name": "Deshaun Watson",
+      "link": "/dynasty-rankings/players/deshaun-watson-261",
+      "team": "CLE",
+      "position": "QB",
+      "values": { "2024-07-22": "3591" }
+    },
+    "4018": {
+      "name": "Joe Mixon",
+      "link": "/dynasty-rankings/players/joe-mixon-273",
+      "team": "HOU",
+      "position": "RB",
+      "values": { "2024-07-22": "3356" }
+    },
+    "4029": {
+      "name": "Dalvin Cook",
+      "link": "/dynasty-rankings/players/dalvin-cook-271",
+      "team": "BAL",
+      "position": "RB",
+      "values": { "2024-07-22": "287" }
+    },
+    "4033": {
+      "name": "David Njoku",
+      "link": "/dynasty-rankings/players/david-njoku-252",
+      "team": "CLE",
+      "position": "TE",
+      "values": { "2024-07-22": "3220" }
+    },
+    "4034": {
+      "name": "Christian McCaffrey",
+      "link": "/dynasty-rankings/players/christian-mccaffrey-283",
+      "team": "SFO",
+      "position": "RB",
+      "values": { "2024-07-22": "6809" }
+    },
+    "4035": {
+      "name": "Alvin Kamara",
+      "link": "/dynasty-rankings/players/alvin-kamara-282",
+      "team": "NOS",
+      "position": "RB",
+      "values": { "2024-07-22": "3117" }
+    },
+    "4037": {
+      "name": "Chris Godwin",
+      "link": "/dynasty-rankings/players/chris-godwin-299",
+      "team": "TBB",
+      "position": "WR",
+      "values": { "2024-07-22": "3434" }
+    },
+    "4039": {
+      "name": "Cooper Kupp",
+      "link": "/dynasty-rankings/players/cooper-kupp-310",
+      "team": "LAR",
+      "position": "WR",
+      "values": { "2024-07-22": "3597" }
+    },
+    "4040": {
+      "name": "JuJu Smith-Schuster",
+      "link": "/dynasty-rankings/players/juju-smith-schuster-276",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "831" }
+    },
+    "4046": {
+      "name": "Patrick Mahomes",
+      "link": "/dynasty-rankings/players/patrick-mahomes-272",
+      "team": "KCC",
+      "position": "QB",
+      "values": { "2024-07-22": "9991" }
+    },
+    "4054": {
+      "name": "Mo Alie-Cox",
+      "link": "/dynasty-rankings/players/mo-alie-cox-195",
+      "team": "IND",
+      "position": "TE",
+      "values": { "2024-07-22": "350" }
+    },
+    "4066": {
+      "name": "Evan Engram",
+      "link": "/dynasty-rankings/players/evan-engram-229",
+      "team": "JAC",
+      "position": "TE",
+      "values": { "2024-07-22": "3231" }
+    },
+    "4080": {
+      "name": "Zay Jones",
+      "link": "/dynasty-rankings/players/zay-jones-327",
+      "team": "ARI",
+      "position": "WR",
+      "values": { "2024-07-22": "1507" }
+    },
+    "4082": {
+      "name": "Curtis Samuel",
+      "link": "/dynasty-rankings/players/curtis-samuel-244",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "2453" }
+    },
+    "4089": {
+      "name": "Gerald Everett",
+      "link": "/dynasty-rankings/players/gerald-everett-55",
+      "team": "CHI",
+      "position": "TE",
+      "values": { "2024-07-22": "917" }
+    },
+    "4111": {
+      "name": "D'Onta Foreman",
+      "link": "/dynasty-rankings/players/d-onta-foreman-358",
+      "team": "CLE",
+      "position": "RB",
+      "values": { "2024-07-22": "1294" }
+    },
+    "4137": {
+      "name": "James Conner",
+      "link": "/dynasty-rankings/players/james-conner-268",
+      "team": "ARI",
+      "position": "RB",
+      "values": { "2024-07-22": "2756" }
+    },
+    "4144": {
+      "name": "Jonnu Smith",
+      "link": "/dynasty-rankings/players/jonnu-smith-84",
+      "team": "MIA",
+      "position": "TE",
+      "values": { "2024-07-22": "1452" }
+    },
+    "4147": {
+      "name": "Samaje Perine",
+      "link": "/dynasty-rankings/players/samaje-perine-785",
+      "team": "DEN",
+      "position": "RB",
+      "values": { "2024-07-22": "822" }
+    },
+    "4149": {
+      "name": "Jamaal Williams",
+      "link": "/dynasty-rankings/players/jamaal-williams-339",
+      "team": "NOS",
+      "position": "RB",
+      "values": { "2024-07-22": "793" }
+    },
+    "4171": {
+      "name": "Josh Reynolds",
+      "link": "/dynasty-rankings/players/josh-reynolds-61",
+      "team": "DEN",
+      "position": "WR",
+      "values": { "2024-07-22": "1244" }
+    },
+    "4177": {
+      "name": "Mack Hollins",
+      "link": "/dynasty-rankings/players/mack-hollins-767",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "251" }
+    },
+    "4179": {
+      "name": "Joshua Dobbs",
+      "link": "/dynasty-rankings/players/joshua-dobbs-821",
+      "team": "SFO",
+      "position": "QB",
+      "values": { "2024-07-22": "770" }
+    },
+    "4197": {
+      "name": "Isaiah McKenzie",
+      "link": "/dynasty-rankings/players/isaiah-mckenzie-766",
+      "team": "NYG",
+      "position": "WR",
+      "values": { "2024-07-22": "361" }
+    },
+    "4199": {
+      "name": "Aaron Jones",
+      "link": "/dynasty-rankings/players/aaron-jones-301",
+      "team": "MIN",
+      "position": "RB",
+      "values": { "2024-07-22": "2827" }
+    },
+    "4217": {
+      "name": "George Kittle",
+      "link": "/dynasty-rankings/players/george-kittle-298",
+      "team": "SFO",
+      "position": "TE",
+      "values": { "2024-07-22": "3407" }
+    },
+    "4234": {
+      "name": "Noah Brown",
+      "link": "/dynasty-rankings/players/noah-brown-776",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "1174" }
+    },
+    "4351": {
+      "name": "Tim Patrick",
+      "link": "/dynasty-rankings/players/tim-patrick-206",
+      "team": "DEN",
+      "position": "WR",
+      "values": { "2024-07-22": "653" }
+    },
+    "4381": {
+      "name": "Taysom Hill",
+      "link": "/dynasty-rankings/players/taysom-hill-150",
+      "team": "NOS",
+      "position": "QB",
+      "values": { "2024-07-22": "1374" }
+    },
+    "4454": {
+      "name": "Kendrick Bourne",
+      "link": "/dynasty-rankings/players/kendrick-bourne-153",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "1424" }
+    },
+    "4634": {
+      "name": "Kenneth Walker III",
+      "link": "/dynasty-rankings/players/kenneth-walker-iii-1227",
+      "team": "SEA",
+      "position": "RB",
+      "values": { "2024-07-22": "4674" }
+    },
+    "4663": {
+      "name": "Austin Ekeler",
+      "link": "/dynasty-rankings/players/austin-ekeler-385",
+      "team": "WAS",
+      "position": "RB",
+      "values": { "2024-07-22": "2282" }
+    },
+    "4844": {
+      "name": "Elijah Mitchell",
+      "link": "/dynasty-rankings/players/elijah-mitchell-1013",
+      "team": "SFO",
+      "position": "RB",
+      "values": { "2024-07-22": "1791" }
+    },
+    "4866": {
+      "name": "Saquon Barkley",
+      "link": "/dynasty-rankings/players/saquon-barkley-1",
+      "team": "PHI",
+      "position": "RB",
+      "values": { "2024-07-22": "5031" }
+    },
+    "4881": {
+      "name": "Lamar Jackson",
+      "link": "/dynasty-rankings/players/lamar-jackson-372",
+      "team": "BAL",
+      "position": "QB",
+      "values": { "2024-07-22": "8510" }
+    },
+    "4892": {
+      "name": "Baker Mayfield",
+      "link": "/dynasty-rankings/players/baker-mayfield-215",
+      "team": "TBB",
+      "position": "QB",
+      "values": { "2024-07-22": "3692" }
+    },
+    "4943": {
+      "name": "Sam Darnold",
+      "link": "/dynasty-rankings/players/sam-darnold-331",
+      "team": "MIN",
+      "position": "QB",
+      "values": { "2024-07-22": "2103" }
+    },
+    "4950": {
+      "name": "Christian Kirk",
+      "link": "/dynasty-rankings/players/christian-kirk-221",
+      "team": "JAC",
+      "position": "WR",
+      "values": { "2024-07-22": "3669" }
+    },
+    "4951": {
+      "name": "D.J. Chark",
+      "link": "/dynasty-rankings/players/dj-chark-361",
+      "team": "LAC",
+      "position": "WR",
+      "values": { "2024-07-22": "1497" }
+    },
+    "4961": {
+      "name": "D.J. Moore",
+      "link": "/dynasty-rankings/players/dj-moore-304",
+      "team": "CHI",
+      "position": "WR",
+      "values": { "2024-07-22": "4971" }
+    },
+    "4972": {
+      "name": "Mason Rudolph",
+      "link": "/dynasty-rankings/players/mason-rudolph-110",
+      "team": "TEN",
+      "position": "QB",
+      "values": { "2024-07-22": "446" }
+    },
+    "4973": {
+      "name": "Hayden Hurst",
+      "link": "/dynasty-rankings/players/hayden-hurst-8",
+      "team": "LAC",
+      "position": "TE",
+      "values": { "2024-07-22": "962" }
+    },
+    "4981": {
+      "name": "Calvin Ridley",
+      "link": "/dynasty-rankings/players/calvin-ridley-293",
+      "team": "TEN",
+      "position": "WR",
+      "values": { "2024-07-22": "3106" }
+    },
+    "4985": {
+      "name": "Rashaad Penny",
+      "link": "/dynasty-rankings/players/rashaad-penny-210",
+      "team": "CAR",
+      "position": "RB",
+      "values": { "2024-07-22": "464" }
+    },
+    "4988": {
+      "name": "Nick Chubb",
+      "link": "/dynasty-rankings/players/nick-chubb-274",
+      "team": "CLE",
+      "position": "RB",
+      "values": { "2024-07-22": "2783" }
+    },
+    "4993": {
+      "name": "Mike Gesicki",
+      "link": "/dynasty-rankings/players/mike-gesicki-330",
+      "team": "CIN",
+      "position": "TE",
+      "values": { "2024-07-22": "1413" }
+    },
+    "5000": {
+      "name": "Chase Edmonds",
+      "link": "/dynasty-rankings/players/chase-edmonds-354",
+      "team": "TBB",
+      "position": "RB",
+      "values": { "2024-07-22": "475" }
+    },
+    "5001": {
+      "name": "Dalton Schultz",
+      "link": "/dynasty-rankings/players/dalton-schultz-487",
+      "team": "HOU",
+      "position": "TE",
+      "values": { "2024-07-22": "2676" }
+    },
+    "5010": {
+      "name": "Will Dissly",
+      "link": "/dynasty-rankings/players/will-dissly-86",
+      "team": "LAC",
+      "position": "TE",
+      "values": { "2024-07-22": "865" }
+    },
+    "5012": {
+      "name": "Mark Andrews",
+      "link": "/dynasty-rankings/players/mark-andrews-366",
+      "team": "BAL",
+      "position": "TE",
+      "values": { "2024-07-22": "4668" }
+    },
+    "5022": {
+      "name": "Dallas Goedert",
+      "link": "/dynasty-rankings/players/dallas-goedert-382",
+      "team": "PHI",
+      "position": "TE",
+      "values": { "2024-07-22": "2583" }
+    },
+    "5038": {
+      "name": "Michael Gallup",
+      "link": "/dynasty-rankings/players/michael-gallup-237",
+      "team": "LVR",
+      "position": "WR",
+      "values": { "2024-07-22": "992" }
+    },
+    "5045": {
+      "name": "Courtland Sutton",
+      "link": "/dynasty-rankings/players/courtland-sutton-226",
+      "team": "DEN",
+      "position": "WR",
+      "values": { "2024-07-22": "2682" }
+    },
+    "5046": {
+      "name": "Royce Freeman",
+      "link": "/dynasty-rankings/players/royce-freeman-248",
+      "team": "DAL",
+      "position": "RB",
+      "values": { "2024-07-22": "385" }
+    },
+    "5086": {
+      "name": "Marquez Valdes-Scantling",
+      "link": "/dynasty-rankings/players/marquez-valdes-scantling-369",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "823" }
+    },
+    "5113": {
+      "name": "Cedrick Wilson",
+      "link": "/dynasty-rankings/players/cedrick-wilson-498",
+      "team": "NOS",
+      "position": "WR",
+      "values": { "2024-07-22": "480" }
+    },
+    "5121": {
+      "name": "Braxton Berrios",
+      "link": "/dynasty-rankings/players/braxton-berrios-126",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "267" }
+    },
+    "5133": {
+      "name": "Tyler Conklin",
+      "link": "/dynasty-rankings/players/tyler-conklin-489",
+      "team": "NYJ",
+      "position": "TE",
+      "values": { "2024-07-22": "1392" }
+    },
+    "5137": {
+      "name": "Richie James",
+      "link": "/dynasty-rankings/players/richie-james-168",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "214" }
+    },
+    "5154": {
+      "name": "Trent Sherfield",
+      "link": "/dynasty-rankings/players/trent-sherfield-524",
+      "team": "MIN",
+      "position": "WR",
+      "values": { "2024-07-22": "195" }
+    },
+    "5185": {
+      "name": "Allen Lazard",
+      "link": "/dynasty-rankings/players/allen-lazard-46",
+      "team": "NYJ",
+      "position": "WR",
+      "values": { "2024-07-22": "644" }
+    },
+    "5248": {
+      "name": "Gus Edwards",
+      "link": "/dynasty-rankings/players/gus-edwards-76",
+      "team": "LAC",
+      "position": "RB",
+      "values": { "2024-07-22": "2377" }
+    },
+    "5284": {
+      "name": "Jeffery Wilson",
+      "link": "/dynasty-rankings/players/jeffery-wilson-199",
+      "team": "MIA",
+      "position": "RB",
+      "values": { "2024-07-22": "635" }
+    },
+    "5347": {
+      "name": "Nyheim Hines",
+      "link": "/dynasty-rankings/players/nyheim-hines-412",
+      "team": "CLE",
+      "position": "RB",
+      "values": { "2024-07-22": "648" }
+    },
+    "5374": {
+      "name": "Justin Watson",
+      "link": "/dynasty-rankings/players/justin-watson-178",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "613" }
+    },
+    "5409": {
+      "name": "Tanner Hudson",
+      "link": "/dynasty-rankings/players/tanner-hudson-457",
+      "team": "CIN",
+      "position": "TE",
+      "values": { "2024-07-22": "224" }
+    },
+    "5695": {
+      "name": "Brandon Powell",
+      "link": "/dynasty-rankings/players/brandon-powell-522",
+      "team": "MIN",
+      "position": "WR",
+      "values": { "2024-07-22": "513" }
+    },
+    "5844": {
+      "name": "T.J. Hockenson",
+      "link": "/dynasty-rankings/players/tj-hockenson-247",
+      "team": "MIN",
+      "position": "TE",
+      "values": { "2024-07-22": "4391" }
+    },
+    "5846": {
+      "name": "DK Metcalf",
+      "link": "/dynasty-rankings/players/dk-metcalf-224",
+      "team": "SEA",
+      "position": "WR",
+      "values": { "2024-07-22": "5185" }
+    },
+    "5848": {
+      "name": "Marquise Brown",
+      "link": "/dynasty-rankings/players/marquise-brown-311",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "3215" }
+    },
+    "5849": {
+      "name": "Kyler Murray",
+      "link": "/dynasty-rankings/players/kyler-murray-379",
+      "team": "ARI",
+      "position": "QB",
+      "values": { "2024-07-22": "7010" }
+    },
+    "5850": {
+      "name": "Josh Jacobs",
+      "link": "/dynasty-rankings/players/josh-jacobs-303",
+      "team": "GBP",
+      "position": "RB",
+      "values": { "2024-07-22": "3994" }
+    },
+    "5854": {
+      "name": "Drew Lock",
+      "link": "/dynasty-rankings/players/drew-lock-33",
+      "team": "NYG",
+      "position": "QB",
+      "values": { "2024-07-22": "1340" }
+    },
+    "5857": {
+      "name": "Noah Fant",
+      "link": "/dynasty-rankings/players/noah-fant-243",
+      "team": "SEA",
+      "position": "TE",
+      "values": { "2024-07-22": "1796" }
+    },
+    "5859": {
+      "name": "A.J. Brown",
+      "link": "/dynasty-rankings/players/aj-brown-217",
+      "team": "PHI",
+      "position": "WR",
+      "values": { "2024-07-22": "6753" }
+    },
+    "5870": {
+      "name": "Daniel Jones",
+      "link": "/dynasty-rankings/players/daniel-jones-87",
+      "team": "NYG",
+      "position": "QB",
+      "values": { "2024-07-22": "2883" }
+    },
+    "5872": {
+      "name": "Deebo Samuel",
+      "link": "/dynasty-rankings/players/deebo-samuel-383",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "4417" }
+    },
+    "5880": {
+      "name": "Parris Campbell",
+      "link": "/dynasty-rankings/players/parris-campbell-313",
+      "team": "PHI",
+      "position": "WR",
+      "values": { "2024-07-22": "742" }
+    },
+    "5892": {
+      "name": "David Montgomery",
+      "link": "/dynasty-rankings/players/david-montgomery-288",
+      "team": "DET",
+      "position": "RB",
+      "values": { "2024-07-22": "3211" }
+    },
+    "5906": {
+      "name": "Dawson Knox",
+      "link": "/dynasty-rankings/players/dawson-knox-88",
+      "team": "BUF",
+      "position": "TE",
+      "values": { "2024-07-22": "1601" }
+    },
+    "5917": {
+      "name": "Mecole Hardman",
+      "link": "/dynasty-rankings/players/mecole-hardman-404",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "930" }
+    },
+    "5927": {
+      "name": "Terry McLaurin",
+      "link": "/dynasty-rankings/players/terry-mclaurin-328",
+      "team": "WAS",
+      "position": "WR",
+      "values": { "2024-07-22": "3567" }
+    },
+    "5937": {
+      "name": "Diontae Johnson",
+      "link": "/dynasty-rankings/players/diontae-johnson-338",
+      "team": "CAR",
+      "position": "WR",
+      "values": { "2024-07-22": "3295" }
+    },
+    "5938": {
+      "name": "Lil'Jordan Humphrey",
+      "link": "/dynasty-rankings/players/lil-jordan-humphrey-177",
+      "team": "DEN",
+      "position": "WR",
+      "values": { "2024-07-22": "263" }
+    },
+    "5947": {
+      "name": "Jakobi Meyers",
+      "link": "/dynasty-rankings/players/jakobi-meyers-13",
+      "team": "LVR",
+      "position": "WR",
+      "values": { "2024-07-22": "2607" }
+    },
+    "5955": {
+      "name": "Hunter Renfrow",
+      "link": "/dynasty-rankings/players/hunter-renfrow-100",
+      "team": "FA",
+      "position": "WR",
+      "values": { "2024-07-22": "481" }
+    },
+    "5967": {
+      "name": "Tony Pollard",
+      "link": "/dynasty-rankings/players/tony-pollard-344",
+      "team": "TEN",
+      "position": "RB",
+      "values": { "2024-07-22": "2971" }
+    },
+    "5970": {
+      "name": "Greg Dortch",
+      "link": "/dynasty-rankings/players/greg-dortch-10",
+      "team": "ARI",
+      "position": "WR",
+      "values": { "2024-07-22": "1584" }
+    },
+    "5973": {
+      "name": "Josh Oliver",
+      "link": "/dynasty-rankings/players/josh-oliver-7",
+      "team": "MIN",
+      "position": "TE",
+      "values": { "2024-07-22": "279" }
+    },
+    "5985": {
+      "name": "Foster Moreau",
+      "link": "/dynasty-rankings/players/foster-moreau-179",
+      "team": "NOS",
+      "position": "TE",
+      "values": { "2024-07-22": "692" }
+    },
+    "5987": {
+      "name": "Alexander Mattison",
+      "link": "/dynasty-rankings/players/alexander-mattison-326",
+      "team": "LVR",
+      "position": "RB",
+      "values": { "2024-07-22": "1421" }
+    },
+    "5995": {
+      "name": "Justice Hill",
+      "link": "/dynasty-rankings/players/justice-hill-368",
+      "team": "BAL",
+      "position": "RB",
+      "values": { "2024-07-22": "1228" }
+    },
+    "6001": {
+      "name": "Drew Sample",
+      "link": "/dynasty-rankings/players/drew-sample-435",
+      "team": "CIN",
+      "position": "TE",
+      "values": { "2024-07-22": "260" }
+    },
+    "6011": {
+      "name": "Gardner Minshew",
+      "link": "/dynasty-rankings/players/gardner-minshew-47",
+      "team": "LVR",
+      "position": "QB",
+      "values": { "2024-07-22": "2250" }
+    },
+    "6039": {
+      "name": "Ty Johnson",
+      "link": "/dynasty-rankings/players/ty-johnson-6",
+      "team": "BUF",
+      "position": "RB",
+      "values": { "2024-07-22": "752" }
+    },
+    "6074": {
+      "name": "Donald Parham",
+      "link": "/dynasty-rankings/players/donald-parham-882",
+      "team": "LAC",
+      "position": "TE",
+      "values": { "2024-07-22": "963" }
+    },
+    "6111": {
+      "name": "Jake Browning",
+      "link": "/dynasty-rankings/players/jake-browning-459",
+      "team": "CIN",
+      "position": "QB",
+      "values": { "2024-07-22": "1245" }
+    },
+    "6126": {
+      "name": "Irv Smith",
+      "link": "/dynasty-rankings/players/irv-smith-399",
+      "team": "KCC",
+      "position": "TE",
+      "values": { "2024-07-22": "831" }
+    },
+    "6130": {
+      "name": "Devin Singletary",
+      "link": "/dynasty-rankings/players/devin-singletary-238",
+      "team": "NYG",
+      "position": "RB",
+      "values": { "2024-07-22": "2629" }
+    },
+    "6136": {
+      "name": "Jarrett Stidham",
+      "link": "/dynasty-rankings/players/jarrett-stidham-156",
+      "team": "DEN",
+      "position": "QB",
+      "values": { "2024-07-22": "896" }
+    },
+    "6144": {
+      "name": "Trayveon Williams",
+      "link": "/dynasty-rankings/players/trayveon-williams-99",
+      "team": "CIN",
+      "position": "RB",
+      "values": { "2024-07-22": "714" }
+    },
+    "6149": {
+      "name": "Darius Slayton",
+      "link": "/dynasty-rankings/players/darius-slayton-77",
+      "team": "NYG",
+      "position": "WR",
+      "values": { "2024-07-22": "1345" }
+    },
+    "6151": {
+      "name": "Miles Sanders",
+      "link": "/dynasty-rankings/players/miles-sanders-222",
+      "team": "CAR",
+      "position": "RB",
+      "values": { "2024-07-22": "1098" }
+    },
+    "6234": {
+      "name": "Deonte Harty",
+      "link": "/dynasty-rankings/players/deonte-harty-612",
+      "team": "BAL",
+      "position": "WR",
+      "values": { "2024-07-22": "452" }
+    },
+    "6271": {
+      "name": "Olamide Zaccheaus",
+      "link": "/dynasty-rankings/players/olamide-zaccheaus-609",
+      "team": "WAS",
+      "position": "WR",
+      "values": { "2024-07-22": "369" }
+    },
+    "6290": {
+      "name": "Scotty Miller",
+      "link": "/dynasty-rankings/players/scotty-miller-442",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "430" }
+    },
+    "6421": {
+      "name": "Jalen Guyton",
+      "link": "/dynasty-rankings/players/jalen-guyton-467",
+      "team": "LVR",
+      "position": "WR",
+      "values": { "2024-07-22": "620" }
+    },
+    "6598": {
+      "name": "Trenton Irwin",
+      "link": "/dynasty-rankings/players/trenton-irwin-980",
+      "team": "CIN",
+      "position": "WR",
+      "values": { "2024-07-22": "380" }
+    },
+    "6659": {
+      "name": "Craig Reynolds",
+      "link": "/dynasty-rankings/players/craig-reynolds-604",
+      "team": "DET",
+      "position": "RB",
+      "values": { "2024-07-22": "427" }
+    },
+    "6694": {
+      "name": "D'Ernest Johnson",
+      "link": "/dynasty-rankings/players/d-ernest-johnson-445",
+      "team": "JAC",
+      "position": "RB",
+      "values": { "2024-07-22": "611" }
+    },
+    "6768": {
+      "name": "Tua Tagovailoa",
+      "link": "/dynasty-rankings/players/tua-tagovailoa-600",
+      "team": "MIA",
+      "position": "QB",
+      "values": { "2024-07-22": "5402" }
+    },
+    "6770": {
+      "name": "Joe Burrow",
+      "link": "/dynasty-rankings/players/joe-burrow-601",
+      "team": "CIN",
+      "position": "QB",
+      "values": { "2024-07-22": "7867" }
+    },
+    "6783": {
+      "name": "Jerry Jeudy",
+      "link": "/dynasty-rankings/players/jerry-jeudy-545",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "2661" }
+    },
+    "6786": {
+      "name": "CeeDee Lamb",
+      "link": "/dynasty-rankings/players/ceedee-lamb-546",
+      "team": "DAL",
+      "position": "WR",
+      "values": { "2024-07-22": "9206" }
+    },
+    "6790": {
+      "name": "D'Andre Swift",
+      "link": "/dynasty-rankings/players/d-andre-swift-639",
+      "team": "CHI",
+      "position": "RB",
+      "values": { "2024-07-22": "3490" }
+    },
+    "6794": {
+      "name": "Justin Jefferson",
+      "link": "/dynasty-rankings/players/justin-jefferson-542",
+      "team": "MIN",
+      "position": "WR",
+      "values": { "2024-07-22": "9611" }
+    },
+    "6797": {
+      "name": "Justin Herbert",
+      "link": "/dynasty-rankings/players/justin-herbert-599",
+      "team": "LAC",
+      "position": "QB",
+      "values": { "2024-07-22": "7198" }
+    },
+    "6801": {
+      "name": "Tee Higgins",
+      "link": "/dynasty-rankings/players/tee-higgins-543",
+      "team": "CIN",
+      "position": "WR",
+      "values": { "2024-07-22": "4850" }
+    },
+    "6803": {
+      "name": "Brandon Aiyuk",
+      "link": "/dynasty-rankings/players/brandon-aiyuk-538",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "5636" }
+    },
+    "6804": {
+      "name": "Jordan Love",
+      "link": "/dynasty-rankings/players/jordan-love-596",
+      "team": "GBP",
+      "position": "QB",
+      "values": { "2024-07-22": "7274" }
+    },
+    "6805": {
+      "name": "KJ Hamler",
+      "link": "/dynasty-rankings/players/kj-hamler-541",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "812" }
+    },
+    "6806": {
+      "name": "J.K. Dobbins",
+      "link": "/dynasty-rankings/players/jk-dobbins-636",
+      "team": "LAC",
+      "position": "RB",
+      "values": { "2024-07-22": "2105" }
+    },
+    "6813": {
+      "name": "Jonathan Taylor",
+      "link": "/dynasty-rankings/players/jonathan-taylor-634",
+      "team": "IND",
+      "position": "RB",
+      "values": { "2024-07-22": "5719" }
+    },
+    "6814": {
+      "name": "Laviska Shenault",
+      "link": "/dynasty-rankings/players/laviska-shenault-540",
+      "team": "SEA",
+      "position": "WR",
+      "values": { "2024-07-22": "625" }
+    },
+    "6819": {
+      "name": "Michael Pittman",
+      "link": "/dynasty-rankings/players/michael-pittman-536",
+      "team": "IND",
+      "position": "WR",
+      "values": { "2024-07-22": "5003" }
+    },
+    "6820": {
+      "name": "Clyde Edwards-Helaire",
+      "link": "/dynasty-rankings/players/clyde-edwards-helaire-633",
+      "team": "KCC",
+      "position": "RB",
+      "values": { "2024-07-22": "1315" }
+    },
+    "6824": {
+      "name": "Donovan Peoples-Jones",
+      "link": "/dynasty-rankings/players/donovan-peoples-jones-579",
+      "team": "DET",
+      "position": "WR",
+      "values": { "2024-07-22": "1038" }
+    },
+    "6826": {
+      "name": "Cole Kmet",
+      "link": "/dynasty-rankings/players/cole-kmet-569",
+      "team": "CHI",
+      "position": "TE",
+      "values": { "2024-07-22": "2680" }
+    },
+    "6828": {
+      "name": "AJ Dillon",
+      "link": "/dynasty-rankings/players/aj-dillon-631",
+      "team": "GBP",
+      "position": "RB",
+      "values": { "2024-07-22": "1313" }
+    },
+    "6843": {
+      "name": "Albert Okwuegbunam",
+      "link": "/dynasty-rankings/players/albert-okwuegbunam-563",
+      "team": "PHI",
+      "position": "TE",
+      "values": { "2024-07-22": "549" }
+    },
+    "6845": {
+      "name": "Zack Moss",
+      "link": "/dynasty-rankings/players/zack-moss-638",
+      "team": "CIN",
+      "position": "RB",
+      "values": { "2024-07-22": "2837" }
+    },
+    "6847": {
+      "name": "Devin Duvernay",
+      "link": "/dynasty-rankings/players/devin-duvernay-560",
+      "team": "JAC",
+      "position": "WR",
+      "values": { "2024-07-22": "743" }
+    },
+    "6849": {
+      "name": "Denzel Mims",
+      "link": "/dynasty-rankings/players/denzel-mims-558",
+      "team": "JAC",
+      "position": "WR",
+      "values": { "2024-07-22": "649" }
+    },
+    "6850": {
+      "name": "Harrison Bryant",
+      "link": "/dynasty-rankings/players/harrison-bryant-752",
+      "team": "LVR",
+      "position": "TE",
+      "values": { "2024-07-22": "363" }
+    },
+    "6853": {
+      "name": "Van Jefferson",
+      "link": "/dynasty-rankings/players/van-jefferson-578",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "1045" }
+    },
+    "6865": {
+      "name": "Colby Parkinson",
+      "link": "/dynasty-rankings/players/colby-parkinson-565",
+      "team": "LAR",
+      "position": "TE",
+      "values": { "2024-07-22": "1442" }
+    },
+    "6869": {
+      "name": "Adam Trautman",
+      "link": "/dynasty-rankings/players/adam-trautman-566",
+      "team": "DEN",
+      "position": "TE",
+      "values": { "2024-07-22": "677" }
+    },
+    "6886": {
+      "name": "Chase Claypool",
+      "link": "/dynasty-rankings/players/chase-claypool-537",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "957" }
+    },
+    "6904": {
+      "name": "Jalen Hurts",
+      "link": "/dynasty-rankings/players/jalen-hurts-595",
+      "team": "PHI",
+      "position": "QB",
+      "values": { "2024-07-22": "8452" }
+    },
+    "6918": {
+      "name": "Salvon Ahmed",
+      "link": "/dynasty-rankings/players/salvon-ahmed-625",
+      "team": "MIA",
+      "position": "RB",
+      "values": { "2024-07-22": "383" }
+    },
+    "6920": {
+      "name": "Isaiah Hodgins",
+      "link": "/dynasty-rankings/players/isaiah-hodgins-561",
+      "team": "NYG",
+      "position": "WR",
+      "values": { "2024-07-22": "953" }
+    },
+    "6927": {
+      "name": "Quez Watkins",
+      "link": "/dynasty-rankings/players/quez-watkins-914",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "645" }
+    },
+    "6931": {
+      "name": "DeeJay Dallas",
+      "link": "/dynasty-rankings/players/deejay-dallas-621",
+      "team": "ARI",
+      "position": "RB",
+      "values": { "2024-07-22": "482" }
+    },
+    "6938": {
+      "name": "Cam Akers",
+      "link": "/dynasty-rankings/players/cam-akers-531",
+      "team": "MIN",
+      "position": "RB",
+      "values": { "2024-07-22": "453" }
+    },
+    "6943": {
+      "name": "Gabriel Davis",
+      "link": "/dynasty-rankings/players/gabriel-davis-533",
+      "team": "JAC",
+      "position": "WR",
+      "values": { "2024-07-22": "2281" }
+    },
+    "6945": {
+      "name": "Antonio Gibson",
+      "link": "/dynasty-rankings/players/antonio-gibson-584",
+      "team": "NEP",
+      "position": "RB",
+      "values": { "2024-07-22": "1936" }
+    },
+    "6951": {
+      "name": "Eno Benjamin",
+      "link": "/dynasty-rankings/players/eno-benjamin-635",
+      "team": "NOS",
+      "position": "RB",
+      "values": { "2024-07-22": "442" }
+    },
+    "6960": {
+      "name": "Tyler Johnson",
+      "link": "/dynasty-rankings/players/tyler-johnson-572",
+      "team": "LAR",
+      "position": "WR",
+      "values": { "2024-07-22": "710" }
+    },
+    "6989": {
+      "name": "Marquez Callaway",
+      "link": "/dynasty-rankings/players/marquez-callaway-887",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "586" }
+    },
+    "7002": {
+      "name": "Juwan Johnson",
+      "link": "/dynasty-rankings/players/juwan-johnson-575",
+      "team": "NOS",
+      "position": "TE",
+      "values": { "2024-07-22": "1494" }
+    },
+    "7021": {
+      "name": "Rico Dowdle",
+      "link": "/dynasty-rankings/players/rico-dowdle-555",
+      "team": "DAL",
+      "position": "RB",
+      "values": { "2024-07-22": "2080" }
+    },
+    "7045": {
+      "name": "Joshua Kelley",
+      "link": "/dynasty-rankings/players/joshua-kelley-629",
+      "team": "LAC",
+      "position": "RB",
+      "values": { "2024-07-22": "625" }
+    },
+    "7049": {
+      "name": "Jauan Jennings",
+      "link": "/dynasty-rankings/players/jauan-jennings-576",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "1349" }
+    },
+    "7066": {
+      "name": "K.J. Osborn",
+      "link": "/dynasty-rankings/players/kj-osborn-912",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "1303" }
+    },
+    "7083": {
+      "name": "Tyler Huntley",
+      "link": "/dynasty-rankings/players/tyler-huntley-618",
+      "team": "CLE",
+      "position": "QB",
+      "values": { "2024-07-22": "717" }
+    },
+    "7090": {
+      "name": "Darnell Mooney",
+      "link": "/dynasty-rankings/players/darnell-mooney-911",
+      "team": "ATL",
+      "position": "WR",
+      "values": { "2024-07-22": "2074" }
+    },
+    "7496": {
+      "name": "Nick Westbrook-Ikhine",
+      "link": "/dynasty-rankings/players/nick-westbrook-ikhine-950",
+      "team": "TEN",
+      "position": "WR",
+      "values": { "2024-07-22": "483" }
+    },
+    "7523": {
+      "name": "Trevor Lawrence",
+      "link": "/dynasty-rankings/players/trevor-lawrence-1094",
+      "team": "JAC",
+      "position": "QB",
+      "values": { "2024-07-22": "6204" }
+    },
+    "7525": {
+      "name": "DeVonta Smith",
+      "link": "/dynasty-rankings/players/devonta-smith-1005",
+      "team": "PHI",
+      "position": "WR",
+      "values": { "2024-07-22": "5597" }
+    },
+    "7526": {
+      "name": "Jaylen Waddle",
+      "link": "/dynasty-rankings/players/jaylen-waddle-1007",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "6085" }
+    },
+    "7527": {
+      "name": "Mac Jones",
+      "link": "/dynasty-rankings/players/mac-jones-1018",
+      "team": "JAC",
+      "position": "QB",
+      "values": { "2024-07-22": "1094" }
+    },
+    "7528": {
+      "name": "Najee Harris",
+      "link": "/dynasty-rankings/players/najee-harris-1031",
+      "team": "PIT",
+      "position": "RB",
+      "values": { "2024-07-22": "3189" }
+    },
+    "7533": {
+      "name": "Anthony Schwartz",
+      "link": "/dynasty-rankings/players/anthony-schwartz-1073",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "504" }
+    },
+    "7535": {
+      "name": "Hunter Long",
+      "link": "/dynasty-rankings/players/hunter-long-1056",
+      "team": "LAR",
+      "position": "TE",
+      "values": { "2024-07-22": "363" }
+    },
+    "7538": {
+      "name": "Zach Wilson",
+      "link": "/dynasty-rankings/players/zach-wilson-1016",
+      "team": "DEN",
+      "position": "QB",
+      "values": { "2024-07-22": "887" }
+    },
+    "7543": {
+      "name": "Travis Etienne",
+      "link": "/dynasty-rankings/players/travis-etienne-1030",
+      "team": "JAC",
+      "position": "RB",
+      "values": { "2024-07-22": "5302" }
+    },
+    "7547": {
+      "name": "Amon-Ra St. Brown",
+      "link": "/dynasty-rankings/players/amon-ra-st-brown-1010",
+      "team": "DET",
+      "position": "WR",
+      "values": { "2024-07-22": "8303" }
+    },
+    "7553": {
+      "name": "Kyle Pitts",
+      "link": "/dynasty-rankings/players/kyle-pitts-1051",
+      "team": "ATL",
+      "position": "TE",
+      "values": { "2024-07-22": "5083" }
+    },
+    "7562": {
+      "name": "Tutu Atwell",
+      "link": "/dynasty-rankings/players/tutu-atwell-1078",
+      "team": "LAR",
+      "position": "WR",
+      "values": { "2024-07-22": "1422" }
+    },
+    "7564": {
+      "name": "Ja'Marr Chase",
+      "link": "/dynasty-rankings/players/ja-marr-chase-1004",
+      "team": "CIN",
+      "position": "WR",
+      "values": { "2024-07-22": "8856" }
+    },
+    "7565": {
+      "name": "Terrace Marshall",
+      "link": "/dynasty-rankings/players/terrace-marshall-1085",
+      "team": "CAR",
+      "position": "WR",
+      "values": { "2024-07-22": "780" }
+    },
+    "7567": {
+      "name": "Kenneth Gainwell",
+      "link": "/dynasty-rankings/players/kenneth-gainwell-1032",
+      "team": "PHI",
+      "position": "RB",
+      "values": { "2024-07-22": "1271" }
+    },
+    "7568": {
+      "name": "Brevin Jordan",
+      "link": "/dynasty-rankings/players/brevin-jordan-1052",
+      "team": "HOU",
+      "position": "TE",
+      "values": { "2024-07-22": "1191" }
+    },
+    "7569": {
+      "name": "Nico Collins",
+      "link": "/dynasty-rankings/players/nico-collins-1040",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "5643" }
+    },
+    "7571": {
+      "name": "Rashod Bateman",
+      "link": "/dynasty-rankings/players/rashod-bateman-1070",
+      "team": "BAL",
+      "position": "WR",
+      "values": { "2024-07-22": "2130" }
+    },
+    "7585": {
+      "name": "Davis Mills",
+      "link": "/dynasty-rankings/players/davis-mills-1029",
+      "team": "HOU",
+      "position": "QB",
+      "values": { "2024-07-22": "567" }
+    },
+    "7587": {
+      "name": "Dyami Brown",
+      "link": "/dynasty-rankings/players/dyami-brown-1069",
+      "team": "WAS",
+      "position": "WR",
+      "values": { "2024-07-22": "894" }
+    },
+    "7588": {
+      "name": "Javonte Williams",
+      "link": "/dynasty-rankings/players/javonte-williams-1033",
+      "team": "DEN",
+      "position": "RB",
+      "values": { "2024-07-22": "2876" }
+    },
+    "7591": {
+      "name": "Justin Fields",
+      "link": "/dynasty-rankings/players/justin-fields-1015",
+      "team": "PIT",
+      "position": "QB",
+      "values": { "2024-07-22": "2688" }
+    },
+    "7593": {
+      "name": "Trey Sermon",
+      "link": "/dynasty-rankings/players/trey-sermon-1034",
+      "team": "IND",
+      "position": "RB",
+      "values": { "2024-07-22": "1335" }
+    },
+    "7594": {
+      "name": "Chuba Hubbard",
+      "link": "/dynasty-rankings/players/chuba-hubbard-1014",
+      "team": "CAR",
+      "position": "RB",
+      "values": { "2024-07-22": "2008" }
+    },
+    "7595": {
+      "name": "Tylan Wallace",
+      "link": "/dynasty-rankings/players/tylan-wallace-1008",
+      "team": "BAL",
+      "position": "WR",
+      "values": { "2024-07-22": "448" }
+    },
+    "7596": {
+      "name": "Elijah Moore",
+      "link": "/dynasty-rankings/players/elijah-moore-1012",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "1675" }
+    },
+    "7600": {
+      "name": "Pat Freiermuth",
+      "link": "/dynasty-rankings/players/pat-freiermuth-1053",
+      "team": "PIT",
+      "position": "TE",
+      "values": { "2024-07-22": "2876" }
+    },
+    "7601": {
+      "name": "Rondale Moore",
+      "link": "/dynasty-rankings/players/rondale-moore-1006",
+      "team": "ATL",
+      "position": "WR",
+      "values": { "2024-07-22": "1691" }
+    },
+    "7602": {
+      "name": "Kylen Granson",
+      "link": "/dynasty-rankings/players/kylen-granson-1119",
+      "team": "IND",
+      "position": "TE",
+      "values": { "2024-07-22": "638" }
+    },
+    "7605": {
+      "name": "Kyle Trask",
+      "link": "/dynasty-rankings/players/kyle-trask-1019",
+      "team": "TBB",
+      "position": "QB",
+      "values": { "2024-07-22": "633" }
+    },
+    "7606": {
+      "name": "Kadarius Toney",
+      "link": "/dynasty-rankings/players/kadarius-toney-1039",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "758" }
+    },
+    "7607": {
+      "name": "Michael Carter",
+      "link": "/dynasty-rankings/players/michael-carter-1035",
+      "team": "ARI",
+      "position": "RB",
+      "values": { "2024-07-22": "899" }
+    },
+    "7608": {
+      "name": "Khalil Herbert",
+      "link": "/dynasty-rankings/players/khalil-herbert-994",
+      "team": "CHI",
+      "position": "RB",
+      "values": { "2024-07-22": "1894" }
+    },
+    "7610": {
+      "name": "Trey Lance",
+      "link": "/dynasty-rankings/players/trey-lance-1017",
+      "team": "DAL",
+      "position": "QB",
+      "values": { "2024-07-22": "1546" }
+    },
+    "7611": {
+      "name": "Rhamondre Stevenson",
+      "link": "/dynasty-rankings/players/rhamondre-stevenson-1036",
+      "team": "NEP",
+      "position": "RB",
+      "values": { "2024-07-22": "3600" }
+    },
+    "7670": {
+      "name": "Josh Palmer",
+      "link": "/dynasty-rankings/players/josh-palmer-1065",
+      "team": "LAC",
+      "position": "WR",
+      "values": { "2024-07-22": "2563" }
+    },
+    "7694": {
+      "name": "Tommy Tremble",
+      "link": "/dynasty-rankings/players/tommy-tremble-1054",
+      "team": "CAR",
+      "position": "TE",
+      "values": { "2024-07-22": "764" }
+    },
+    "7713": {
+      "name": "Jaelon Darden",
+      "link": "/dynasty-rankings/players/jaelon-darden-1043",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "316" }
+    },
+    "7720": {
+      "name": "Kene Nwangwu",
+      "link": "/dynasty-rankings/players/kene-nwangwu-1120",
+      "team": "MIN",
+      "position": "RB",
+      "values": { "2024-07-22": "399" }
+    },
+    "7757": {
+      "name": "Ben Skowronek",
+      "link": "/dynasty-rankings/players/ben-skowronek-1110",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "372" }
+    },
+    "7794": {
+      "name": "Chris Evans",
+      "link": "/dynasty-rankings/players/chris-evans-998",
+      "team": "CIN",
+      "position": "RB",
+      "values": { "2024-07-22": "1062" }
+    },
+    "7828": {
+      "name": "Noah Gray",
+      "link": "/dynasty-rankings/players/noah-gray-1059",
+      "team": "KCC",
+      "position": "TE",
+      "values": { "2024-07-22": "1148" }
+    },
+    "7891": {
+      "name": "Brock Wright",
+      "link": "/dynasty-rankings/players/brock-wright-1162",
+      "team": "DET",
+      "position": "TE",
+      "values": { "2024-07-22": "566" }
+    },
+    "8110": {
+      "name": "Jake Ferguson",
+      "link": "/dynasty-rankings/players/jake-ferguson-1258",
+      "team": "DAL",
+      "position": "TE",
+      "values": { "2024-07-22": "3251" }
+    },
+    "8111": {
+      "name": "Cade Otton",
+      "link": "/dynasty-rankings/players/cade-otton-1261",
+      "team": "TBB",
+      "position": "TE",
+      "values": { "2024-07-22": "2079" }
+    },
+    "8112": {
+      "name": "Drake London",
+      "link": "/dynasty-rankings/players/drake-london-1268",
+      "team": "ATL",
+      "position": "WR",
+      "values": { "2024-07-22": "6056" }
+    },
+    "8114": {
+      "name": "Erik Ezukanma",
+      "link": "/dynasty-rankings/players/erik-ezukanma-1239",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "443" }
+    },
+    "8116": {
+      "name": "Pierre Strong Jr.",
+      "link": "/dynasty-rankings/players/pierre-strong-jr-1204",
+      "team": "CLE",
+      "position": "RB",
+      "values": { "2024-07-22": "797" }
+    },
+    "8117": {
+      "name": "Jalen Tolbert",
+      "link": "/dynasty-rankings/players/jalen-tolbert-1247",
+      "team": "DAL",
+      "position": "WR",
+      "values": { "2024-07-22": "1407" }
+    },
+    "8118": {
+      "name": "David Bell",
+      "link": "/dynasty-rankings/players/david-bell-1275",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "900" }
+    },
+    "8119": {
+      "name": "Jahan Dotson",
+      "link": "/dynasty-rankings/players/jahan-dotson-1272",
+      "team": "WAS",
+      "position": "WR",
+      "values": { "2024-07-22": "2776" }
+    },
+    "8121": {
+      "name": "Romeo Doubs",
+      "link": "/dynasty-rankings/players/romeo-doubs-1238",
+      "team": "GBP",
+      "position": "WR",
+      "values": { "2024-07-22": "2997" }
+    },
+    "8122": {
+      "name": "Zonovan Knight",
+      "link": "/dynasty-rankings/players/zonovan-knight-1186",
+      "team": "DET",
+      "position": "RB",
+      "values": { "2024-07-22": "660" }
+    },
+    "8123": {
+      "name": "Hassan Haskins",
+      "link": "/dynasty-rankings/players/hassan-haskins-1191",
+      "team": "TEN",
+      "position": "RB",
+      "values": { "2024-07-22": "628" }
+    },
+    "8125": {
+      "name": "Calvin Austin III",
+      "link": "/dynasty-rankings/players/calvin-austin-iii-1262",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "1250" }
+    },
+    "8126": {
+      "name": "Wan'Dale Robinson",
+      "link": "/dynasty-rankings/players/wan-dale-robinson-1274",
+      "team": "NYG",
+      "position": "WR",
+      "values": { "2024-07-22": "2191" }
+    },
+    "8127": {
+      "name": "Charlie Kolar",
+      "link": "/dynasty-rankings/players/charlie-kolar-1254",
+      "team": "BAL",
+      "position": "TE",
+      "values": { "2024-07-22": "223" }
+    },
+    "8129": {
+      "name": "Dameon Pierce",
+      "link": "/dynasty-rankings/players/dameon-pierce-1207",
+      "team": "HOU",
+      "position": "RB",
+      "values": { "2024-07-22": "1913" }
+    },
+    "8130": {
+      "name": "Trey McBride",
+      "link": "/dynasty-rankings/players/trey-mcbride-1253",
+      "team": "ARI",
+      "position": "TE",
+      "values": { "2024-07-22": "5495" }
+    },
+    "8131": {
+      "name": "Isaiah Likely",
+      "link": "/dynasty-rankings/players/isaiah-likely-1257",
+      "team": "BAL",
+      "position": "TE",
+      "values": { "2024-07-22": "2726" }
+    },
+    "8132": {
+      "name": "Tyler Allgeier",
+      "link": "/dynasty-rankings/players/tyler-allgeier-1228",
+      "team": "ATL",
+      "position": "RB",
+      "values": { "2024-07-22": "2153" }
+    },
+    "8134": {
+      "name": "Khalil Shakir",
+      "link": "/dynasty-rankings/players/khalil-shakir-1278",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "2846" }
+    },
+    "8135": {
+      "name": "Treylon Burks",
+      "link": "/dynasty-rankings/players/treylon-burks-1269",
+      "team": "TEN",
+      "position": "WR",
+      "values": { "2024-07-22": "1531" }
+    },
+    "8136": {
+      "name": "Rachaad White",
+      "link": "/dynasty-rankings/players/rachaad-white-1180",
+      "team": "TBB",
+      "position": "RB",
+      "values": { "2024-07-22": "4156" }
+    },
+    "8137": {
+      "name": "George Pickens",
+      "link": "/dynasty-rankings/players/george-pickens-1279",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "5015" }
+    },
+    "8138": {
+      "name": "James Cook",
+      "link": "/dynasty-rankings/players/james-cook-1231",
+      "team": "BUF",
+      "position": "RB",
+      "values": { "2024-07-22": "4658" }
+    },
+    "8139": {
+      "name": "Zamir White",
+      "link": "/dynasty-rankings/players/zamir-white-1230",
+      "team": "LVR",
+      "position": "RB",
+      "values": { "2024-07-22": "3388" }
+    },
+    "8140": {
+      "name": "Justyn Ross",
+      "link": "/dynasty-rankings/players/justyn-ross-1280",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "704" }
+    },
+    "8142": {
+      "name": "Alec Pierce",
+      "link": "/dynasty-rankings/players/alec-pierce-1285",
+      "team": "IND",
+      "position": "WR",
+      "values": { "2024-07-22": "1442" }
+    },
+    "8143": {
+      "name": "Jerome Ford",
+      "link": "/dynasty-rankings/players/jerome-ford-1229",
+      "team": "CLE",
+      "position": "RB",
+      "values": { "2024-07-22": "2774" }
+    },
+    "8144": {
+      "name": "Chris Olave",
+      "link": "/dynasty-rankings/players/chris-olave-1271",
+      "team": "NOS",
+      "position": "WR",
+      "values": { "2024-07-22": "5957" }
+    },
+    "8145": {
+      "name": "Jeremy Ruckert",
+      "link": "/dynasty-rankings/players/jeremy-ruckert-1255",
+      "team": "NYJ",
+      "position": "TE",
+      "values": { "2024-07-22": "810" }
+    },
+    "8146": {
+      "name": "Garrett Wilson",
+      "link": "/dynasty-rankings/players/garrett-wilson-1270",
+      "team": "NYJ",
+      "position": "WR",
+      "values": { "2024-07-22": "6925" }
+    },
+    "8147": {
+      "name": "John Metchie",
+      "link": "/dynasty-rankings/players/john-metchie-1276",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "1392" }
+    },
+    "8148": {
+      "name": "Jameson Williams",
+      "link": "/dynasty-rankings/players/jameson-williams-1273",
+      "team": "DET",
+      "position": "WR",
+      "values": { "2024-07-22": "3145" }
+    },
+    "8150": {
+      "name": "Kyren Williams",
+      "link": "/dynasty-rankings/players/kyren-williams-1226",
+      "team": "LAR",
+      "position": "RB",
+      "values": { "2024-07-22": "4980" }
+    },
+    "8153": {
+      "name": "Isaiah Spiller",
+      "link": "/dynasty-rankings/players/isaiah-spiller-1225",
+      "team": "LAC",
+      "position": "RB",
+      "values": { "2024-07-22": "1006" }
+    },
+    "8154": {
+      "name": "Brian Robinson",
+      "link": "/dynasty-rankings/players/brian-robinson-1232",
+      "team": "WAS",
+      "position": "RB",
+      "values": { "2024-07-22": "3112" }
+    },
+    "8155": {
+      "name": "Breece Hall",
+      "link": "/dynasty-rankings/players/breece-hall-1224",
+      "team": "NYJ",
+      "position": "RB",
+      "values": { "2024-07-22": "7320" }
+    },
+    "8157": {
+      "name": "Bailey Zappe",
+      "link": "/dynasty-rankings/players/bailey-zappe-1212",
+      "team": "NEP",
+      "position": "QB",
+      "values": { "2024-07-22": "335" }
+    },
+    "8159": {
+      "name": "Desmond Ridder",
+      "link": "/dynasty-rankings/players/desmond-ridder-1213",
+      "team": "ARI",
+      "position": "QB",
+      "values": { "2024-07-22": "907" }
+    },
+    "8160": {
+      "name": "Kenny Pickett",
+      "link": "/dynasty-rankings/players/kenny-pickett-1208",
+      "team": "PHI",
+      "position": "QB",
+      "values": { "2024-07-22": "1178" }
+    },
+    "8161": {
+      "name": "Malik Willis",
+      "link": "/dynasty-rankings/players/malik-willis-1210",
+      "team": "TEN",
+      "position": "QB",
+      "values": { "2024-07-22": "733" }
+    },
+    "8162": {
+      "name": "Sam Howell",
+      "link": "/dynasty-rankings/players/sam-howell-1209",
+      "team": "SEA",
+      "position": "QB",
+      "values": { "2024-07-22": "2140" }
+    },
+    "8167": {
+      "name": "Christian Watson",
+      "link": "/dynasty-rankings/players/christian-watson-1248",
+      "team": "GBP",
+      "position": "WR",
+      "values": { "2024-07-22": "3467" }
+    },
+    "8168": {
+      "name": "Skyy Moore",
+      "link": "/dynasty-rankings/players/skyy-moore-1283",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "1126" }
+    },
+    "8171": {
+      "name": "Kyle Philips",
+      "link": "/dynasty-rankings/players/kyle-philips-1318",
+      "team": "TEN",
+      "position": "WR",
+      "values": { "2024-07-22": "593" }
+    },
+    "8172": {
+      "name": "Greg Dulcich",
+      "link": "/dynasty-rankings/players/greg-dulcich-1256",
+      "team": "DEN",
+      "position": "TE",
+      "values": { "2024-07-22": "1828" }
+    },
+    "8174": {
+      "name": "Kevin Harris",
+      "link": "/dynasty-rankings/players/kevin-harris-1205",
+      "team": "NEP",
+      "position": "RB",
+      "values": { "2024-07-22": "623" }
+    },
+    "8176": {
+      "name": "Danny Gray",
+      "link": "/dynasty-rankings/players/danny-gray-1241",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "314" }
+    },
+    "8180": {
+      "name": "Jalen Nailor",
+      "link": "/dynasty-rankings/players/jalen-nailor-1245",
+      "team": "MIN",
+      "position": "WR",
+      "values": { "2024-07-22": "523" }
+    },
+    "8183": {
+      "name": "Brock Purdy",
+      "link": "/dynasty-rankings/players/brock-purdy-1214",
+      "team": "SFO",
+      "position": "QB",
+      "values": { "2024-07-22": "6047" }
+    },
+    "8188": {
+      "name": "Tyquan Thornton",
+      "link": "/dynasty-rankings/players/tyquan-thornton-1246",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "969" }
+    },
+    "8195": {
+      "name": "Ronnie Rivers",
+      "link": "/dynasty-rankings/players/ronnie-rivers-1185",
+      "team": "LAR",
+      "position": "RB",
+      "values": { "2024-07-22": "478" }
+    },
+    "8197": {
+      "name": "Peyton Hendershot",
+      "link": "/dynasty-rankings/players/peyton-hendershot-1349",
+      "team": "DAL",
+      "position": "TE",
+      "values": { "2024-07-22": "572" }
+    },
+    "8204": {
+      "name": "Bo Melton",
+      "link": "/dynasty-rankings/players/bo-melton-1244",
+      "team": "GBP",
+      "position": "WR",
+      "values": { "2024-07-22": "1403" }
+    },
+    "8205": {
+      "name": "Isiah Pacheco",
+      "link": "/dynasty-rankings/players/isiah-pacheco-1266",
+      "team": "KCC",
+      "position": "RB",
+      "values": { "2024-07-22": "4649" }
+    },
+    "8207": {
+      "name": "Tyler Goodson",
+      "link": "/dynasty-rankings/players/tyler-goodson-1189",
+      "team": "IND",
+      "position": "RB",
+      "values": { "2024-07-22": "443" }
+    },
+    "8208": {
+      "name": "Tyler Badie",
+      "link": "/dynasty-rankings/players/tyler-badie-1206",
+      "team": "DEN",
+      "position": "RB",
+      "values": { "2024-07-22": "402" }
+    },
+    "8210": {
+      "name": "Chigoziem Okonkwo",
+      "link": "/dynasty-rankings/players/chigoziem-okonkwo-1320",
+      "team": "TEN",
+      "position": "TE",
+      "values": { "2024-07-22": "2038" }
+    },
+    "8211": {
+      "name": "Tyrion Davis-Price",
+      "link": "/dynasty-rankings/players/tyrion-davis-price-1234",
+      "team": "PHI",
+      "position": "RB",
+      "values": { "2024-07-22": "670" }
+    },
+    "8214": {
+      "name": "Cole Turner",
+      "link": "/dynasty-rankings/players/cole-turner-1179",
+      "team": "WAS",
+      "position": "TE",
+      "values": { "2024-07-22": "755" }
+    },
+    "8219": {
+      "name": "Jelani Woods",
+      "link": "/dynasty-rankings/players/jelani-woods-1305",
+      "team": "IND",
+      "position": "TE",
+      "values": { "2024-07-22": "1543" }
+    },
+    "8221": {
+      "name": "Keaontay Ingram",
+      "link": "/dynasty-rankings/players/keaontay-ingram-1193",
+      "team": "KCC",
+      "position": "RB",
+      "values": { "2024-07-22": "837" }
+    },
+    "8225": {
+      "name": "Daniel Bellinger",
+      "link": "/dynasty-rankings/players/daniel-bellinger-1322",
+      "team": "NYG",
+      "position": "TE",
+      "values": { "2024-07-22": "1702" }
+    },
+    "8228": {
+      "name": "Jaylen Warren",
+      "link": "/dynasty-rankings/players/jaylen-warren-1201",
+      "team": "PIT",
+      "position": "RB",
+      "values": { "2024-07-22": "3250" }
+    },
+    "8230": {
+      "name": "Ty Chandler",
+      "link": "/dynasty-rankings/players/ty-chandler-1182",
+      "team": "MIN",
+      "position": "RB",
+      "values": { "2024-07-22": "1923" }
+    },
+    "8249": {
+      "name": "Lucas Krull",
+      "link": "/dynasty-rankings/players/lucas-krull-1328",
+      "team": "DEN",
+      "position": "TE",
+      "values": { "2024-07-22": "294" }
+    },
+    "8254": {
+      "name": "Julius Chestnut",
+      "link": "/dynasty-rankings/players/julius-chestnut-1325",
+      "team": "TEN",
+      "position": "RB",
+      "values": { "2024-07-22": "360" }
+    },
+    "8408": {
+      "name": "Jordan Mason",
+      "link": "/dynasty-rankings/players/jordan-mason-1330",
+      "team": "SFO",
+      "position": "RB",
+      "values": { "2024-07-22": "786" }
+    },
+    "8489": {
+      "name": "Andrew Ogletree",
+      "link": "/dynasty-rankings/players/andrew-ogletree-1315",
+      "team": "IND",
+      "position": "TE",
+      "values": { "2024-07-22": "361" }
+    },
+    "8676": {
+      "name": "Rashid Shaheed",
+      "link": "/dynasty-rankings/players/rashid-shaheed-1360",
+      "team": "NOS",
+      "position": "WR",
+      "values": { "2024-07-22": "2629" }
+    },
+    "8800": {
+      "name": "Malik Davis",
+      "link": "/dynasty-rankings/players/malik-davis-1197",
+      "team": "DAL",
+      "position": "RB",
+      "values": { "2024-07-22": "869" }
+    },
+    "8917": {
+      "name": "KaVontae Turpin",
+      "link": "/dynasty-rankings/players/kavontae-turpin-1336",
+      "team": "DAL",
+      "position": "WR",
+      "values": { "2024-07-22": "351" }
+    },
+    "9220": {
+      "name": "Evan Hull",
+      "link": "/dynasty-rankings/players/evan-hull-1395",
+      "team": "IND",
+      "position": "RB",
+      "values": { "2024-07-22": "1424" }
+    },
+    "9221": {
+      "name": "Jahmyr Gibbs",
+      "link": "/dynasty-rankings/players/jahmyr-gibbs-1415",
+      "team": "DET",
+      "position": "RB",
+      "values": { "2024-07-22": "7120" }
+    },
+    "9222": {
+      "name": "Zach Evans",
+      "link": "/dynasty-rankings/players/zach-evans-1416",
+      "team": "LAR",
+      "position": "RB",
+      "values": { "2024-07-22": "1019" }
+    },
+    "9224": {
+      "name": "Chase Brown",
+      "link": "/dynasty-rankings/players/chase-brown-1396",
+      "team": "CIN",
+      "position": "RB",
+      "values": { "2024-07-22": "2785" }
+    },
+    "9225": {
+      "name": "Tank Bigsby",
+      "link": "/dynasty-rankings/players/tank-bigsby-1401",
+      "team": "JAC",
+      "position": "RB",
+      "values": { "2024-07-22": "1855" }
+    },
+    "9226": {
+      "name": "De'Von Achane",
+      "link": "/dynasty-rankings/players/de-von-achane-1398",
+      "team": "MIA",
+      "position": "RB",
+      "values": { "2024-07-22": "5481" }
+    },
+    "9227": {
+      "name": "Israel Abanikanda",
+      "link": "/dynasty-rankings/players/israel-abanikanda-1383",
+      "team": "NYJ",
+      "position": "RB",
+      "values": { "2024-07-22": "1094" }
+    },
+    "9228": {
+      "name": "Bryce Young",
+      "link": "/dynasty-rankings/players/bryce-young-1456",
+      "team": "CAR",
+      "position": "QB",
+      "values": { "2024-07-22": "4260" }
+    },
+    "9229": {
+      "name": "Anthony Richardson",
+      "link": "/dynasty-rankings/players/anthony-richardson-1405",
+      "team": "IND",
+      "position": "QB",
+      "values": { "2024-07-22": "7826" }
+    },
+    "9231": {
+      "name": "Jaren Hall",
+      "link": "/dynasty-rankings/players/jaren-hall-1407",
+      "team": "MIN",
+      "position": "QB",
+      "values": { "2024-07-22": "208" }
+    },
+    "9479": {
+      "name": "Darnell Washington",
+      "link": "/dynasty-rankings/players/darnell-washington-1431",
+      "team": "PIT",
+      "position": "TE",
+      "values": { "2024-07-22": "1278" }
+    },
+    "9480": {
+      "name": "Brenton Strange",
+      "link": "/dynasty-rankings/players/brenton-strange-1461",
+      "team": "JAC",
+      "position": "TE",
+      "values": { "2024-07-22": "784" }
+    },
+    "9481": {
+      "name": "Luke Musgrave",
+      "link": "/dynasty-rankings/players/luke-musgrave-1430",
+      "team": "GBP",
+      "position": "TE",
+      "values": { "2024-07-22": "2721" }
+    },
+    "9482": {
+      "name": "Michael Mayer",
+      "link": "/dynasty-rankings/players/michael-mayer-1427",
+      "team": "LVR",
+      "position": "TE",
+      "values": { "2024-07-22": "2302" }
+    },
+    "9484": {
+      "name": "Tucker Kraft",
+      "link": "/dynasty-rankings/players/tucker-kraft-1418",
+      "team": "GBP",
+      "position": "TE",
+      "values": { "2024-07-22": "2085" }
+    },
+    "9486": {
+      "name": "Dontayvion Wicks",
+      "link": "/dynasty-rankings/players/dontayvion-wicks-1448",
+      "team": "GBP",
+      "position": "WR",
+      "values": { "2024-07-22": "3025" }
+    },
+    "9487": {
+      "name": "Parker Washington",
+      "link": "/dynasty-rankings/players/parker-washington-1445",
+      "team": "JAC",
+      "position": "WR",
+      "values": { "2024-07-22": "1379" }
+    },
+    "9488": {
+      "name": "Jaxon Smith-Njigba",
+      "link": "/dynasty-rankings/players/jaxon-smith-njigba-1437",
+      "team": "SEA",
+      "position": "WR",
+      "values": { "2024-07-22": "4781" }
+    },
+    "9489": {
+      "name": "Justin Shorter",
+      "link": "/dynasty-rankings/players/justin-shorter-1425",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "840" }
+    },
+    "9490": {
+      "name": "Tyler Scott",
+      "link": "/dynasty-rankings/players/tyler-scott-1436",
+      "team": "CHI",
+      "position": "WR",
+      "values": { "2024-07-22": "885" }
+    },
+    "9492": {
+      "name": "Trey Palmer",
+      "link": "/dynasty-rankings/players/trey-palmer-1452",
+      "team": "TBB",
+      "position": "WR",
+      "values": { "2024-07-22": "1692" }
+    },
+    "9493": {
+      "name": "Puka Nacua",
+      "link": "/dynasty-rankings/players/puka-nacua-1426",
+      "team": "LAR",
+      "position": "WR",
+      "values": { "2024-07-22": "6982" }
+    },
+    "9494": {
+      "name": "Marvin Mims",
+      "link": "/dynasty-rankings/players/marvin-mims-1442",
+      "team": "DEN",
+      "position": "WR",
+      "values": { "2024-07-22": "2455" }
+    },
+    "9495": {
+      "name": "Rakim Jarrett",
+      "link": "/dynasty-rankings/players/rakim-jarrett-1451",
+      "team": "TBB",
+      "position": "WR",
+      "values": { "2024-07-22": "698" }
+    },
+    "9497": {
+      "name": "Jalin Hyatt",
+      "link": "/dynasty-rankings/players/jalin-hyatt-1399",
+      "team": "NYG",
+      "position": "WR",
+      "values": { "2024-07-22": "2039" }
+    },
+    "9500": {
+      "name": "Josh Downs",
+      "link": "/dynasty-rankings/players/josh-downs-1440",
+      "team": "IND",
+      "position": "WR",
+      "values": { "2024-07-22": "2979" }
+    },
+    "9501": {
+      "name": "Demario Douglas",
+      "link": "/dynasty-rankings/players/demario-douglas-1468",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "2539" }
+    },
+    "9502": {
+      "name": "Tank Dell",
+      "link": "/dynasty-rankings/players/tank-dell-1438",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "5105" }
+    },
+    "9504": {
+      "name": "Kayshon Boutte",
+      "link": "/dynasty-rankings/players/kayshon-boutte-1446",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "998" }
+    },
+    "9505": {
+      "name": "Deuce Vaughn",
+      "link": "/dynasty-rankings/players/deuce-vaughn-1391",
+      "team": "DAL",
+      "position": "RB",
+      "values": { "2024-07-22": "1332" }
+    },
+    "9506": {
+      "name": "Sean Tucker",
+      "link": "/dynasty-rankings/players/sean-tucker-1400",
+      "team": "TBB",
+      "position": "RB",
+      "values": { "2024-07-22": "1062" }
+    },
+    "9508": {
+      "name": "Tyjae Spears",
+      "link": "/dynasty-rankings/players/tyjae-spears-1417",
+      "team": "TEN",
+      "position": "RB",
+      "values": { "2024-07-22": "3371" }
+    },
+    "9509": {
+      "name": "Bijan Robinson",
+      "link": "/dynasty-rankings/players/bijan-robinson-1414",
+      "team": "ATL",
+      "position": "RB",
+      "values": { "2024-07-22": "8205" }
+    },
+    "9511": {
+      "name": "Keaton Mitchell",
+      "link": "/dynasty-rankings/players/keaton-mitchell-1393",
+      "team": "BAL",
+      "position": "RB",
+      "values": { "2024-07-22": "2342" }
+    },
+    "9512": {
+      "name": "DeWayne McBride",
+      "link": "/dynasty-rankings/players/dewayne-mcbride-1394",
+      "team": "MIN",
+      "position": "RB",
+      "values": { "2024-07-22": "991" }
+    },
+    "9753": {
+      "name": "Zach Charbonnet",
+      "link": "/dynasty-rankings/players/zach-charbonnet-1384",
+      "team": "SEA",
+      "position": "RB",
+      "values": { "2024-07-22": "2989" }
+    },
+    "9754": {
+      "name": "Quentin Johnston",
+      "link": "/dynasty-rankings/players/quentin-johnston-1441",
+      "team": "LAC",
+      "position": "WR",
+      "values": { "2024-07-22": "2410" }
+    },
+    "9756": {
+      "name": "Jordan Addison",
+      "link": "/dynasty-rankings/players/jordan-addison-1420",
+      "team": "MIN",
+      "position": "WR",
+      "values": { "2024-07-22": "4218" }
+    },
+    "9757": {
+      "name": "Kendre Miller",
+      "link": "/dynasty-rankings/players/kendre-miller-1386",
+      "team": "NOS",
+      "position": "RB",
+      "values": { "2024-07-22": "2828" }
+    },
+    "9758": {
+      "name": "C.J. Stroud",
+      "link": "/dynasty-rankings/players/cj-stroud-1403",
+      "team": "HOU",
+      "position": "QB",
+      "values": { "2024-07-22": "9308" }
+    },
+    "9997": {
+      "name": "Zay Flowers",
+      "link": "/dynasty-rankings/players/zay-flowers-1443",
+      "team": "BAL",
+      "position": "WR",
+      "values": { "2024-07-22": "4948" }
+    },
+    "9998": {
+      "name": "Hendon Hooker",
+      "link": "/dynasty-rankings/players/hendon-hooker-1404",
+      "team": "DET",
+      "position": "QB",
+      "values": { "2024-07-22": "1288" }
+    },
+    "9999": {
+      "name": "Will Levis",
+      "link": "/dynasty-rankings/players/will-levis-1402",
+      "team": "TEN",
+      "position": "QB",
+      "values": { "2024-07-22": "3774" }
+    },
+    "10210": {
+      "name": "Cameron Latu",
+      "link": "/dynasty-rankings/players/cameron-latu-1432",
+      "team": "SFO",
+      "position": "TE",
+      "values": { "2024-07-22": "620" }
+    },
+    "10212": {
+      "name": "Josh Whyle",
+      "link": "/dynasty-rankings/players/josh-whyle-1471",
+      "team": "TEN",
+      "position": "TE",
+      "values": { "2024-07-22": "267" }
+    },
+    "10213": {
+      "name": "Tre Tucker",
+      "link": "/dynasty-rankings/players/tre-tucker-1460",
+      "team": "LVR",
+      "position": "WR",
+      "values": { "2024-07-22": "1319" }
+    },
+    "10214": {
+      "name": "Davis Allen",
+      "link": "/dynasty-rankings/players/davis-allen-1434",
+      "team": "LAR",
+      "position": "TE",
+      "values": { "2024-07-22": "963" }
+    },
+    "10216": {
+      "name": "Kenny McIntosh",
+      "link": "/dynasty-rankings/players/kenny-mcintosh-1385",
+      "team": "SEA",
+      "position": "RB",
+      "values": { "2024-07-22": "686" }
+    },
+    "10218": {
+      "name": "Xavier Hutchinson",
+      "link": "/dynasty-rankings/players/xavier-hutchinson-1454",
+      "team": "HOU",
+      "position": "WR",
+      "values": { "2024-07-22": "1015" }
+    },
+    "10219": {
+      "name": "Chris Rodriguez",
+      "link": "/dynasty-rankings/players/chris-rodriguez-1389",
+      "team": "WAS",
+      "position": "RB",
+      "values": { "2024-07-22": "1381" }
+    },
+    "10220": {
+      "name": "Will Mallory",
+      "link": "/dynasty-rankings/players/will-mallory-1435",
+      "team": "IND",
+      "position": "TE",
+      "values": { "2024-07-22": "483" }
+    },
+    "10221": {
+      "name": "Ronnie Bell",
+      "link": "/dynasty-rankings/players/ronnie-bell-1439",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "768" }
+    },
+    "10222": {
+      "name": "Jayden Reed",
+      "link": "/dynasty-rankings/players/jayden-reed-1419",
+      "team": "GBP",
+      "position": "WR",
+      "values": { "2024-07-22": "4301" }
+    },
+    "10223": {
+      "name": "Eric Gray",
+      "link": "/dynasty-rankings/players/eric-gray-1388",
+      "team": "NYG",
+      "position": "RB",
+      "values": { "2024-07-22": "1327" }
+    },
+    "10225": {
+      "name": "Jonathan Mingo",
+      "link": "/dynasty-rankings/players/jonathan-mingo-1450",
+      "team": "CAR",
+      "position": "WR",
+      "values": { "2024-07-22": "1604" }
+    },
+    "10226": {
+      "name": "Andrei Iosivas",
+      "link": "/dynasty-rankings/players/andrei-iosivas-1422",
+      "team": "CIN",
+      "position": "WR",
+      "values": { "2024-07-22": "1302" }
+    },
+    "10228": {
+      "name": "Charlie Jones",
+      "link": "/dynasty-rankings/players/charlie-jones-1455",
+      "team": "CIN",
+      "position": "WR",
+      "values": { "2024-07-22": "756" }
+    },
+    "10229": {
+      "name": "Rashee Rice",
+      "link": "/dynasty-rankings/players/rashee-rice-1447",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "4021" }
+    },
+    "10231": {
+      "name": "Elijah Higgins",
+      "link": "/dynasty-rankings/players/elijah-higgins-1469",
+      "team": "ARI",
+      "position": "TE",
+      "values": { "2024-07-22": "620" }
+    },
+    "10232": {
+      "name": "Michael Wilson",
+      "link": "/dynasty-rankings/players/michael-wilson-1421",
+      "team": "ARI",
+      "position": "WR",
+      "values": { "2024-07-22": "2385" }
+    },
+    "10234": {
+      "name": "Derius Davis",
+      "link": "/dynasty-rankings/players/derius-davis-1473",
+      "team": "LAC",
+      "position": "WR",
+      "values": { "2024-07-22": "843" }
+    },
+    "10235": {
+      "name": "Roschon Johnson",
+      "link": "/dynasty-rankings/players/roschon-johnson-1390",
+      "team": "CHI",
+      "position": "RB",
+      "values": { "2024-07-22": "2173" }
+    },
+    "10236": {
+      "name": "Dalton Kincaid",
+      "link": "/dynasty-rankings/players/dalton-kincaid-1428",
+      "team": "BUF",
+      "position": "TE",
+      "values": { "2024-07-22": "5371" }
+    },
+    "10444": {
+      "name": "Cedric Tillman",
+      "link": "/dynasty-rankings/players/cedric-tillman-1444",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "1463" }
+    },
+    "10857": {
+      "name": "Stetson Bennett",
+      "link": "/dynasty-rankings/players/stetson-bennett-1406",
+      "team": "LAR",
+      "position": "QB",
+      "values": { "2024-07-22": "638" }
+    },
+    "10859": {
+      "name": "Sam LaPorta",
+      "link": "/dynasty-rankings/players/sam-laporta-1429",
+      "team": "DET",
+      "position": "TE",
+      "values": { "2024-07-22": "6802" }
+    },
+    "10860": {
+      "name": "Malik Cunningham",
+      "link": "/dynasty-rankings/players/malik-cunningham-1410",
+      "team": "BAL",
+      "position": "QB",
+      "values": { "2024-07-22": "541" }
+    },
+    "10862": {
+      "name": "Dorian Thompson-Robinson",
+      "link": "/dynasty-rankings/players/dorian-thompson-robinson-1411",
+      "team": "CLE",
+      "position": "QB",
+      "values": { "2024-07-22": "761" }
+    },
+    "10863": {
+      "name": "A.T. Perry",
+      "link": "/dynasty-rankings/players/at-perry-1449",
+      "team": "NOS",
+      "position": "WR",
+      "values": { "2024-07-22": "1623" }
+    },
+    "10866": {
+      "name": "Aidan O'Connell",
+      "link": "/dynasty-rankings/players/aidan-o-connell-1412",
+      "team": "LVR",
+      "position": "QB",
+      "values": { "2024-07-22": "2103" }
+    },
+    "10867": {
+      "name": "Jake Bobo",
+      "link": "/dynasty-rankings/players/jake-bobo-1488",
+      "team": "SEA",
+      "position": "WR",
+      "values": { "2024-07-22": "773" }
+    },
+    "10870": {
+      "name": "Deneric Prince",
+      "link": "/dynasty-rankings/players/deneric-prince-1476",
+      "team": "KCC",
+      "position": "RB",
+      "values": { "2024-07-22": "671" }
+    },
+    "10871": {
+      "name": "Luke Schoonmaker",
+      "link": "/dynasty-rankings/players/luke-schoonmaker-1382",
+      "team": "DAL",
+      "position": "TE",
+      "values": { "2024-07-22": "1493" }
+    },
+    "11199": {
+      "name": "Emari Demercado",
+      "link": "/dynasty-rankings/players/emari-demercado-1481",
+      "team": "ARI",
+      "position": "RB",
+      "values": { "2024-07-22": "820" }
+    },
+    "11210": {
+      "name": "Malik Heath",
+      "link": "/dynasty-rankings/players/malik-heath-1502",
+      "team": "GBP",
+      "position": "WR",
+      "values": { "2024-07-22": "499" }
+    },
+    "11256": {
+      "name": "Tyson Bagent",
+      "link": "/dynasty-rankings/players/tyson-bagent-1478",
+      "team": "CHI",
+      "position": "QB",
+      "values": { "2024-07-22": "530" }
+    },
+    "11292": {
+      "name": "Tommy DeVito",
+      "link": "/dynasty-rankings/players/tommy-devito-1520",
+      "team": "NYG",
+      "position": "QB",
+      "values": { "2024-07-22": "228" }
+    },
+    "11306": {
+      "name": "Xavier Gipson",
+      "link": "/dynasty-rankings/players/xavier-gipson-1504",
+      "team": "NYJ",
+      "position": "WR",
+      "values": { "2024-07-22": "1487" }
+    },
+    "11311": {
+      "name": "Jason Brownlee",
+      "link": "/dynasty-rankings/players/jason-brownlee-1508",
+      "team": "NYJ",
+      "position": "WR",
+      "values": { "2024-07-22": "477" }
+    },
+    "11370": {
+      "name": "Chris Brooks",
+      "link": "/dynasty-rankings/players/chris-brooks-1490",
+      "team": "MIA",
+      "position": "RB",
+      "values": { "2024-07-22": "523" }
+    },
+    "11435": {
+      "name": "Emanuel Wilson",
+      "link": "/dynasty-rankings/players/emanuel-wilson-1515",
+      "team": "GBP",
+      "position": "RB",
+      "values": { "2024-07-22": "569" }
+    },
+    "11439": {
+      "name": "Jaleel McLaughlin",
+      "link": "/dynasty-rankings/players/jaleel-mclaughlin-1486",
+      "team": "DEN",
+      "position": "RB",
+      "values": { "2024-07-22": "2370" }
+    },
+    "11557": {
+      "name": "Joe Milton",
+      "link": "/dynasty-rankings/players/joe-milton-1556",
+      "team": "NEP",
+      "position": "QB",
+      "values": { "2024-07-22": "948" }
+    },
+    "11559": {
+      "name": "Michael Penix Jr.",
+      "link": "/dynasty-rankings/players/michael-penix-jr-1554",
+      "team": "ATL",
+      "position": "QB",
+      "values": { "2024-07-22": "3749" }
+    },
+    "11560": {
+      "name": "Caleb Williams",
+      "link": "/dynasty-rankings/players/caleb-williams-1550",
+      "team": "CHI",
+      "position": "QB",
+      "values": { "2024-07-22": "7641" }
+    },
+    "11561": {
+      "name": "Michael Pratt",
+      "link": "/dynasty-rankings/players/michael-pratt-1559",
+      "team": "GBP",
+      "position": "QB",
+      "values": { "2024-07-22": "511" }
+    },
+    "11562": {
+      "name": "Spencer Rattler",
+      "link": "/dynasty-rankings/players/spencer-rattler-1557",
+      "team": "NOS",
+      "position": "QB",
+      "values": { "2024-07-22": "1824" }
+    },
+    "11563": {
+      "name": "Bo Nix",
+      "link": "/dynasty-rankings/players/bo-nix-1553",
+      "team": "DEN",
+      "position": "QB",
+      "values": { "2024-07-22": "3722" }
+    },
+    "11564": {
+      "name": "Drake Maye",
+      "link": "/dynasty-rankings/players/drake-maye-1551",
+      "team": "NEP",
+      "position": "QB",
+      "values": { "2024-07-22": "5085" }
+    },
+    "11565": {
+      "name": "J.J. McCarthy",
+      "link": "/dynasty-rankings/players/jj-mccarthy-1555",
+      "team": "MIN",
+      "position": "QB",
+      "values": { "2024-07-22": "4861" }
+    },
+    "11566": {
+      "name": "Jayden Daniels",
+      "link": "/dynasty-rankings/players/jayden-daniels-1552",
+      "team": "WAS",
+      "position": "QB",
+      "values": { "2024-07-22": "6634" }
+    },
+    "11567": {
+      "name": "Jordan Travis",
+      "link": "/dynasty-rankings/players/jordan-travis-1560",
+      "team": "NYJ",
+      "position": "QB",
+      "values": { "2024-07-22": "1227" }
+    },
+    "11568": {
+      "name": "Blake Watson",
+      "link": "/dynasty-rankings/players/blake-watson-1647",
+      "team": "DEN",
+      "position": "RB",
+      "values": { "2024-07-22": "1011" }
+    },
+    "11570": {
+      "name": "Rasheen Ali",
+      "link": "/dynasty-rankings/players/rasheen-ali-1631",
+      "team": "BAL",
+      "position": "RB",
+      "values": { "2024-07-22": "1569" }
+    },
+    "11571": {
+      "name": "Isaiah Davis",
+      "link": "/dynasty-rankings/players/isaiah-davis-1635",
+      "team": "NYJ",
+      "position": "RB",
+      "values": { "2024-07-22": "1042" }
+    },
+    "11574": {
+      "name": "Dylan Laube",
+      "link": "/dynasty-rankings/players/dylan-laube-1584",
+      "team": "LVR",
+      "position": "RB",
+      "values": { "2024-07-22": "1607" }
+    },
+    "11575": {
+      "name": "Ray Davis",
+      "link": "/dynasty-rankings/players/ray-davis-1574",
+      "team": "BUF",
+      "position": "RB",
+      "values": { "2024-07-22": "2137" }
+    },
+    "11576": {
+      "name": "Braelon Allen",
+      "link": "/dynasty-rankings/players/braelon-allen-1567",
+      "team": "NYJ",
+      "position": "RB",
+      "values": { "2024-07-22": "2248" }
+    },
+    "11577": {
+      "name": "Will Shipley",
+      "link": "/dynasty-rankings/players/will-shipley-1572",
+      "team": "PHI",
+      "position": "RB",
+      "values": { "2024-07-22": "1794" }
+    },
+    "11579": {
+      "name": "Audric Estime",
+      "link": "/dynasty-rankings/players/audric-estime-1566",
+      "team": "DEN",
+      "position": "RB",
+      "values": { "2024-07-22": "2387" }
+    },
+    "11580": {
+      "name": "Dillon Johnson",
+      "link": "/dynasty-rankings/players/dillon-johnson-1580",
+      "team": "TEN",
+      "position": "RB",
+      "values": { "2024-07-22": "1131" }
+    },
+    "11581": {
+      "name": "MarShawn Lloyd",
+      "link": "/dynasty-rankings/players/marshawn-lloyd-1575",
+      "team": "GBP",
+      "position": "RB",
+      "values": { "2024-07-22": "2947" }
+    },
+    "11583": {
+      "name": "Jonathon Brooks",
+      "link": "/dynasty-rankings/players/jonathon-brooks-1568",
+      "team": "CAR",
+      "position": "RB",
+      "values": { "2024-07-22": "4828" }
+    },
+    "11584": {
+      "name": "Bucky Irving",
+      "link": "/dynasty-rankings/players/bucky-irving-1569",
+      "team": "TBB",
+      "position": "RB",
+      "values": { "2024-07-22": "2241" }
+    },
+    "11586": {
+      "name": "Blake Corum",
+      "link": "/dynasty-rankings/players/blake-corum-1564",
+      "team": "LAR",
+      "position": "RB",
+      "values": { "2024-07-22": "3278" }
+    },
+    "11588": {
+      "name": "Jawhar Jordan",
+      "link": "/dynasty-rankings/players/jawhar-jordan-1641",
+      "team": "HOU",
+      "position": "RB",
+      "values": { "2024-07-22": "695" }
+    },
+    "11589": {
+      "name": "Trey Benson",
+      "link": "/dynasty-rankings/players/trey-benson-1565",
+      "team": "ARI",
+      "position": "RB",
+      "values": { "2024-07-22": "3925" }
+    },
+    "11590": {
+      "name": "Jase McClellan",
+      "link": "/dynasty-rankings/players/jase-mcclellan-1576",
+      "team": "ATL",
+      "position": "RB",
+      "values": { "2024-07-22": "977" }
+    },
+    "11592": {
+      "name": "Erick All",
+      "link": "/dynasty-rankings/players/erick-all-1616",
+      "team": "CIN",
+      "position": "TE",
+      "values": { "2024-07-22": "1518" }
+    },
+    "11595": {
+      "name": "Jared Wiley",
+      "link": "/dynasty-rankings/players/jared-wiley-1619",
+      "team": "KCC",
+      "position": "TE",
+      "values": { "2024-07-22": "1403" }
+    },
+    "11596": {
+      "name": "Ben Sinnott",
+      "link": "/dynasty-rankings/players/ben-sinnott-1615",
+      "team": "WAS",
+      "position": "TE",
+      "values": { "2024-07-22": "2728" }
+    },
+    "11597": {
+      "name": "Theo Johnson",
+      "link": "/dynasty-rankings/players/theo-johnson-1620",
+      "team": "NYG",
+      "position": "TE",
+      "values": { "2024-07-22": "1745" }
+    },
+    "11599": {
+      "name": "Cade Stover",
+      "link": "/dynasty-rankings/players/cade-stover-1613",
+      "team": "HOU",
+      "position": "TE",
+      "values": { "2024-07-22": "1408" }
+    },
+    "11600": {
+      "name": "Ja'Tavion Sanders",
+      "link": "/dynasty-rankings/players/ja-tavion-sanders-1614",
+      "team": "CAR",
+      "position": "TE",
+      "values": { "2024-07-22": "2200" }
+    },
+    "11603": {
+      "name": "AJ Barner",
+      "link": "/dynasty-rankings/players/aj-barner-1629",
+      "team": "SEA",
+      "position": "TE",
+      "values": { "2024-07-22": "608" }
+    },
+    "11604": {
+      "name": "Brock Bowers",
+      "link": "/dynasty-rankings/players/brock-bowers-1612",
+      "team": "LVR",
+      "position": "TE",
+      "values": { "2024-07-22": "5241" }
+    },
+    "11610": {
+      "name": "Malik Washington",
+      "link": "/dynasty-rankings/players/malik-washington-1623",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "1784" }
+    },
+    "11615": {
+      "name": "Ainias Smith",
+      "link": "/dynasty-rankings/players/ainias-smith-1624",
+      "team": "PHI",
+      "position": "WR",
+      "values": { "2024-07-22": "1077" }
+    },
+    "11616": {
+      "name": "Jacob Cowing",
+      "link": "/dynasty-rankings/players/jacob-cowing-1611",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "1422" }
+    },
+    "11617": {
+      "name": "Malachi Corley",
+      "link": "/dynasty-rankings/players/malachi-corley-1607",
+      "team": "NYJ",
+      "position": "WR",
+      "values": { "2024-07-22": "2302" }
+    },
+    "11618": {
+      "name": "Jalen McMillan",
+      "link": "/dynasty-rankings/players/jalen-mcmillan-1599",
+      "team": "TBB",
+      "position": "WR",
+      "values": { "2024-07-22": "2269" }
+    },
+    "11619": {
+      "name": "Ja'Lynn Polk",
+      "link": "/dynasty-rankings/players/ja-lynn-polk-1602",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "3030" }
+    },
+    "11620": {
+      "name": "Rome Odunze",
+      "link": "/dynasty-rankings/players/rome-odunze-1587",
+      "team": "CHI",
+      "position": "WR",
+      "values": { "2024-07-22": "5637" }
+    },
+    "11621": {
+      "name": "Brenden Rice",
+      "link": "/dynasty-rankings/players/brenden-rice-1594",
+      "team": "LAC",
+      "position": "WR",
+      "values": { "2024-07-22": "1619" }
+    },
+    "11624": {
+      "name": "Xavier Worthy",
+      "link": "/dynasty-rankings/players/xavier-worthy-1591",
+      "team": "KCC",
+      "position": "WR",
+      "values": { "2024-07-22": "4359" }
+    },
+    "11625": {
+      "name": "Adonai Mitchell",
+      "link": "/dynasty-rankings/players/adonai-mitchell-1597",
+      "team": "IND",
+      "position": "WR",
+      "values": { "2024-07-22": "3300" }
+    },
+    "11626": {
+      "name": "Xavier Legette",
+      "link": "/dynasty-rankings/players/xavier-legette-1610",
+      "team": "CAR",
+      "position": "WR",
+      "values": { "2024-07-22": "3255" }
+    },
+    "11627": {
+      "name": "Troy Franklin",
+      "link": "/dynasty-rankings/players/troy-franklin-1590",
+      "team": "DEN",
+      "position": "WR",
+      "values": { "2024-07-22": "2690" }
+    },
+    "11628": {
+      "name": "Marvin Harrison Jr.",
+      "link": "/dynasty-rankings/players/marvin-harrison-jr-1585",
+      "team": "ARI",
+      "position": "WR",
+      "values": { "2024-07-22": "8077" }
+    },
+    "11629": {
+      "name": "Devontez Walker",
+      "link": "/dynasty-rankings/players/devontez-walker-1592",
+      "team": "BAL",
+      "position": "WR",
+      "values": { "2024-07-22": "1823" }
+    },
+    "11630": {
+      "name": "Roman Wilson",
+      "link": "/dynasty-rankings/players/roman-wilson-1600",
+      "team": "PIT",
+      "position": "WR",
+      "values": { "2024-07-22": "2795" }
+    },
+    "11631": {
+      "name": "Brian Thomas Jr.",
+      "link": "/dynasty-rankings/players/brian-thomas-jr-1589",
+      "team": "JAC",
+      "position": "WR",
+      "values": { "2024-07-22": "4609" }
+    },
+    "11632": {
+      "name": "Malik Nabers",
+      "link": "/dynasty-rankings/players/malik-nabers-1586",
+      "team": "NYG",
+      "position": "WR",
+      "values": { "2024-07-22": "6592" }
+    },
+    "11633": {
+      "name": "Jamari Thrash",
+      "link": "/dynasty-rankings/players/jamari-thrash-1595",
+      "team": "CLE",
+      "position": "WR",
+      "values": { "2024-07-22": "1008" }
+    },
+    "11635": {
+      "name": "Ladd McConkey",
+      "link": "/dynasty-rankings/players/ladd-mcconkey-1598",
+      "team": "LAC",
+      "position": "WR",
+      "values": { "2024-07-22": "4400" }
+    },
+    "11636": {
+      "name": "Johnny Wilson",
+      "link": "/dynasty-rankings/players/johnny-wilson-1596",
+      "team": "PHI",
+      "position": "WR",
+      "values": { "2024-07-22": "1215" }
+    },
+    "11637": {
+      "name": "Keon Coleman",
+      "link": "/dynasty-rankings/players/keon-coleman-1588",
+      "team": "BUF",
+      "position": "WR",
+      "values": { "2024-07-22": "3766" }
+    },
+    "11638": {
+      "name": "Ricky Pearsall",
+      "link": "/dynasty-rankings/players/ricky-pearsall-1593",
+      "team": "SFO",
+      "position": "WR",
+      "values": { "2024-07-22": "3499" }
+    },
+    "11640": {
+      "name": "Jermaine Burton",
+      "link": "/dynasty-rankings/players/jermaine-burton-1603",
+      "team": "CIN",
+      "position": "WR",
+      "values": { "2024-07-22": "2786" }
+    },
+    "11643": {
+      "name": "Jaylen Wright",
+      "link": "/dynasty-rankings/players/jaylen-wright-1581",
+      "team": "MIA",
+      "position": "RB",
+      "values": { "2024-07-22": "2861" }
+    },
+    "11645": {
+      "name": "Javon Baker",
+      "link": "/dynasty-rankings/players/javon-baker-1608",
+      "team": "NEP",
+      "position": "WR",
+      "values": { "2024-07-22": "2446" }
+    },
+    "11647": {
+      "name": "Kimani Vidal",
+      "link": "/dynasty-rankings/players/kimani-vidal-1636",
+      "team": "LAC",
+      "position": "RB",
+      "values": { "2024-07-22": "2395" }
+    },
+    "11650": {
+      "name": "Luke McCaffrey",
+      "link": "/dynasty-rankings/players/luke-mccaffrey-1606",
+      "team": "WAS",
+      "position": "WR",
+      "values": { "2024-07-22": "2366" }
+    },
+    "11651": {
+      "name": "Isaac Guerendo",
+      "link": "/dynasty-rankings/players/isaac-guerendo-1626",
+      "team": "SFO",
+      "position": "RB",
+      "values": { "2024-07-22": "1645" }
+    },
+    "11652": {
+      "name": "Louis Rees-Zammit",
+      "link": "/dynasty-rankings/players/louis-rees-zammit-1622",
+      "team": "KCC",
+      "position": "RB",
+      "values": { "2024-07-22": "943" }
+    },
+    "11655": {
+      "name": "Tyrone Tracy",
+      "link": "/dynasty-rankings/players/tyrone-tracy-1632",
+      "team": "NYG",
+      "position": "RB",
+      "values": { "2024-07-22": "2086" }
+    },
+    "11716": {
+      "name": "Tip Reiman",
+      "link": "/dynasty-rankings/players/tip-reiman-1628",
+      "team": "ARI",
+      "position": "TE",
+      "values": { "2024-07-22": "691" }
+    },
+    "11729": {
+      "name": "Sione Vaki",
+      "link": "/dynasty-rankings/players/sione-vaki-1627",
+      "team": "DET",
+      "position": "RB",
+      "values": { "2024-07-22": "1091" }
+    },
+    "11748": {
+      "name": "Bub Means",
+      "link": "/dynasty-rankings/players/bub-means-1634",
+      "team": "NOS",
+      "position": "WR",
+      "values": { "2024-07-22": "1201" }
+    },
+    "11783": {
+      "name": "Ryan Flournoy",
+      "link": "/dynasty-rankings/players/ryan-flournoy-1642",
+      "team": "DAL",
+      "position": "WR",
+      "values": { "2024-07-22": "823" }
+    },
+    "11821": {
+      "name": "Tahj Washington",
+      "link": "/dynasty-rankings/players/tahj-washington-1644",
+      "team": "MIA",
+      "position": "WR",
+      "values": { "2024-07-22": "1067" }
+    },
+    "2024 Early 1st": {
+      "name": "2024 Early 1st",
+      "link": "/dynasty-rankings/players/2024-early-1st-1293",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "6795" }
+    },
+    "2025 Early 1st": {
+      "name": "2025 Early 1st",
+      "link": "/dynasty-rankings/players/2025-early-1st-1361",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "5666" }
+    },
+    "2024 Mid 1st": {
+      "name": "2024 Mid 1st",
+      "link": "/dynasty-rankings/players/2024-mid-1st-1294",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "5291" }
+    },
+    "2026 Early 1st": {
+      "name": "2026 Early 1st",
+      "link": "/dynasty-rankings/players/2026-early-1st-1527",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "5039" }
+    },
+    "2025 Mid 1st": {
+      "name": "2025 Mid 1st",
+      "link": "/dynasty-rankings/players/2025-mid-1st-1362",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "4858" }
+    },
+    "2024 Late 1st": {
+      "name": "2024 Late 1st",
+      "link": "/dynasty-rankings/players/2024-late-1st-1295",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "4563" }
+    },
+    "2026 Mid 1st": {
+      "name": "2026 Mid 1st",
+      "link": "/dynasty-rankings/players/2026-mid-1st-1528",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "4338" }
+    },
+    "2025 Late 1st": {
+      "name": "2025 Late 1st",
+      "link": "/dynasty-rankings/players/2025-late-1st-1363",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "4283" }
+    },
+    "2026 Late 1st": {
+      "name": "2026 Late 1st",
+      "link": "/dynasty-rankings/players/2026-late-1st-1529",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "3858" }
+    },
+    "2024 Early 2nd": {
+      "name": "2024 Early 2nd",
+      "link": "/dynasty-rankings/players/2024-early-2nd-1296",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "3519" }
+    },
+    "2025 Early 2nd": {
+      "name": "2025 Early 2nd",
+      "link": "/dynasty-rankings/players/2025-early-2nd-1364",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "3264" }
+    },
+    "2024 Mid 2nd": {
+      "name": "2024 Mid 2nd",
+      "link": "/dynasty-rankings/players/2024-mid-2nd-1297",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "3025" }
+    },
+    "2026 Early 2nd": {
+      "name": "2026 Early 2nd",
+      "link": "/dynasty-rankings/players/2026-early-2nd-1530",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2865" }
+    },
+    "2025 Mid 2nd": {
+      "name": "2025 Mid 2nd",
+      "link": "/dynasty-rankings/players/2025-mid-2nd-1365",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2856" }
+    },
+    "2024 Late 2nd": {
+      "name": "2024 Late 2nd",
+      "link": "/dynasty-rankings/players/2024-late-2nd-1298",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2854" }
+    },
+    "2025 Late 2nd": {
+      "name": "2025 Late 2nd",
+      "link": "/dynasty-rankings/players/2025-late-2nd-1366",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2625" }
+    },
+    "2026 Mid 2nd": {
+      "name": "2026 Mid 2nd",
+      "link": "/dynasty-rankings/players/2026-mid-2nd-1531",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2624" }
+    },
+    "2026 Late 2nd": {
+      "name": "2026 Late 2nd",
+      "link": "/dynasty-rankings/players/2026-late-2nd-1532",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2344" }
+    },
+    "2024 Early 3rd": {
+      "name": "2024 Early 3rd",
+      "link": "/dynasty-rankings/players/2024-early-3rd-1299",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2234" }
+    },
+    "2024 Mid 3rd": {
+      "name": "2024 Mid 3rd",
+      "link": "/dynasty-rankings/players/2024-mid-3rd-1300",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2149" }
+    },
+    "2025 Early 3rd": {
+      "name": "2025 Early 3rd",
+      "link": "/dynasty-rankings/players/2025-early-3rd-1367",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "2117" }
+    },
+    "2026 Early 3rd": {
+      "name": "2026 Early 3rd",
+      "link": "/dynasty-rankings/players/2026-early-3rd-1533",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1905" }
+    },
+    "2025 Mid 3rd": {
+      "name": "2025 Mid 3rd",
+      "link": "/dynasty-rankings/players/2025-mid-3rd-1368",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1901" }
+    },
+    "2024 Late 3rd": {
+      "name": "2024 Late 3rd",
+      "link": "/dynasty-rankings/players/2024-late-3rd-1301",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1891" }
+    },
+    "2025 Late 3rd": {
+      "name": "2025 Late 3rd",
+      "link": "/dynasty-rankings/players/2025-late-3rd-1369",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1785" }
+    },
+    "2026 Mid 3rd": {
+      "name": "2026 Mid 3rd",
+      "link": "/dynasty-rankings/players/2026-mid-3rd-1534",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1723" }
+    },
+    "2024 Early 4th": {
+      "name": "2024 Early 4th",
+      "link": "/dynasty-rankings/players/2024-early-4th-1302",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1505" }
+    },
+    "2026 Late 3rd": {
+      "name": "2026 Late 3rd",
+      "link": "/dynasty-rankings/players/2026-late-3rd-1535",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1482" }
+    },
+    "2024 Mid 4th": {
+      "name": "2024 Mid 4th",
+      "link": "/dynasty-rankings/players/2024-mid-4th-1303",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1473" }
+    },
+    "2025 Early 4th": {
+      "name": "2025 Early 4th",
+      "link": "/dynasty-rankings/players/2025-early-4th-1370",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1393" }
+    },
+    "2024 Late 4th": {
+      "name": "2024 Late 4th",
+      "link": "/dynasty-rankings/players/2024-late-4th-1304",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1345" }
+    },
+    "2025 Mid 4th": {
+      "name": "2025 Mid 4th",
+      "link": "/dynasty-rankings/players/2025-mid-4th-1371",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1315" }
+    },
+    "2026 Early 4th": {
+      "name": "2026 Early 4th",
+      "link": "/dynasty-rankings/players/2026-early-4th-1536",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1288" }
+    },
+    "2025 Late 4th": {
+      "name": "2025 Late 4th",
+      "link": "/dynasty-rankings/players/2025-late-4th-1372",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1218" }
+    },
+    "2026 Mid 4th": {
+      "name": "2026 Mid 4th",
+      "link": "/dynasty-rankings/players/2026-mid-4th-1537",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1142" }
+    },
+    "2026 Late 4th": {
+      "name": "2026 Late 4th",
+      "link": "/dynasty-rankings/players/2026-late-4th-1538",
+      "team": "",
+      "position": "PI",
+      "values": { "2024-07-22": "1056" }
+    }
+  },
+  "unmatched": {}
+}
