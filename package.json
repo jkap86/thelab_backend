@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && node server.js",
-    "postinstall": "node node_modules/puppeteer/install.js"
+    "start": "npm install && node server.js"
   },
   "author": "",
   "license": "ISC",
