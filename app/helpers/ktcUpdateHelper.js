@@ -31,7 +31,11 @@ const matchKtcToSleeperId = (player_value_obj) => {
 
 const getDailyKtcValues = async () => {
   console.log("Getting Daily KTC values...");
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    executablePath: "/app/.apt/usr/bin/google-chrome-stable", // Heroku's Chromium path
+    userDataDir: "/tmp/puppeteer_cache",
+  });
 
   const page = await browser.newPage();
 
