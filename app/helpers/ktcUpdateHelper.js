@@ -31,7 +31,7 @@ const matchKtcToSleeperId = (player_value_obj) => {
 
 const getDailyKtcValues = async () => {
   console.log("Getting Daily KTC values...");
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ args: ["--no-sandbox"] });
 
   const page = await browser.newPage();
 
