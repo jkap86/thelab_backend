@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && node server.js",
-    "postinstall": "npx playwright install",
-    "heroku-postbuild": "mkdir ./.cache && mv /app/.cache/playwright ./.cache"
+    "postinstall": "npx playwright install"
   },
   "author": "",
   "license": "ISC",
