@@ -32,7 +32,7 @@ const matchKtcToSleeperId = (player_value_obj) => {
 const getDailyKtcValues = async () => {
   console.log("Getting Daily KTC values...");
   const browser = await puppeteer.launch({
-    executablePath: "/usr/bin/google-chrome",
+    executablePath: puppeteer.executablePath,
   });
 
   const page = await browser.newPage();
