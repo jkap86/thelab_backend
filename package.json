@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && node server.js",
-    "postinstall": "npx playwright install"
+    "postinstall": "npx playwright install && npx playwright install-deps"
   },
   "author": "",
   "license": "ISC",
