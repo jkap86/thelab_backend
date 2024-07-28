@@ -25,5 +25,5 @@ module.exports = async () => {
     startKtcWorker();
 
     setInterval(startKtcWorker, 1 * 60 * 60 * 1000);
-  }, 5000);
+  }, 15000);
 };
