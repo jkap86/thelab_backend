@@ -32,7 +32,8 @@ const matchKtcToSleeperId = (player_value_obj) => {
 const getDailyKtcValues = async () => {
   console.log("Getting Daily KTC values...");
   const browser = await puppeteer.launch({
-    executablePath: puppeteer.executablePath,
+    executablePath: puppeteer.executablePath(),
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const page = await browser.newPage();
