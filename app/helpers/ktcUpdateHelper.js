@@ -400,4 +400,9 @@ const createKtcSleeperIdsMapping = () => {
 
   fs.writeFileSync("./data/KtcIdMapping.json", JSON.stringify(ktcMapping));
 };
-getDailyKtcValues();
+
+try {
+  getDailyKtcValues();
+} catch (err) {
+  console.log("KTC update ERROR!!!  " + err.message);
+}
