@@ -79,14 +79,18 @@ const updateLeagues = async ({ league_ids_queue, state }) => {
 parentPort.on("message", async (message) => {
   const { league_ids_queue, state } = message;
 
-  const result = await updateUsers({ league_ids_queue, state });
+  try {
+    const result = await updateUsers({ league_ids_queue, state });
 
-  const result2 = await updateLeagues({
-    league_ids_queue: result.league_ids_queue_updated,
-    state,
-  });
+    const result2 = await updateLeagues({
+      league_ids_queue: result.league_ids_queue_updated,
+      state,
+    });
 
-  parentPort.postMessage(result2);
+    parentPort.postMessage(result2);
+  } catch (err) {
+    console.log(err.message);
+  }
 });
 
 const updateLeaguesBatch = async (league_ids_batch, week) => {
