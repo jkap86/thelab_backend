@@ -180,6 +180,49 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
             ...transactions
               .filter((t) => t.type === "trade" && t.status === "complete")
               .map((t) => {
+                const adds = {};
+                const drops = {};
+
+                t.adds &&
+                  Object.keys(t.adds).forEach((add) => {
+                    const manager = rosters_w_username.find(
+                      (ru) => ru.roster_id === t.adds[add]
+                    );
+
+                    adds[add] = manager?.user_id;
+                  });
+
+                t.drops &&
+                  Object.keys(t.drops).forEach((drop) => {
+                    const manager = rosters_w_username.find(
+                      (ru) => ru.roster_id === t.drops[drop]
+                    );
+
+                    drops[drop] = manager?.user_id;
+                  });
+
+                const draft_picks = t.draft_picks.map((dp) => {
+                  return {
+                    round: dp.round,
+                    season: dp.season,
+                    new: rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.owner_id
+                    ).user_id,
+                    old: rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.previous_owner_id
+                    ).user_id,
+                    original: rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.roster_id
+                    ).user_id,
+                    order:
+                      (upcoming_draft?.draft_order &&
+                        parseInt(upcoming_draft.season) ===
+                          parseInt(dp.season) &&
+                        upcoming_draft.draft_order[dp?.roster_id]) ||
+                      null,
+                  };
+                });
+
                 return {
                   ...t,
                   league_id: league.league_id,
@@ -187,21 +230,27 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
                     return {
                       rosters_id: ru.roster_id,
                       username: ru.username,
+                      user_id: ru.user_id,
+                      avatar: ru.avatar,
                       players: ru.players || [],
                     };
                   }),
-                  draft_picks: t.draft_picks.map((dp) => {
-                    return {
-                      ...dp,
-                      order:
-                        (upcoming_draft?.draft_order &&
-                          parseInt(upcoming_draft.season) ===
-                            parseInt(dp.season) &&
-                          upcoming_draft.draft_order[dp?.roster_id]) ||
-                        null,
-                    };
-                  }),
+                  draft_picks: draft_picks,
                   price_check: [""],
+                  managers: Array.from(
+                    new Set([
+                      ...Object.values(adds || {}),
+                      ...Object.values(drops || {}),
+                    ])
+                  ),
+                  players: [
+                    ...Object.keys(t.adds || {}),
+                    ...draft_picks.map(
+                      (pick) => `${pick.season} ${pick.round}.${pick.order}`
+                    ),
+                  ],
+                  adds: adds,
+                  drops: drops,
                 };
               })
           );
@@ -419,10 +468,11 @@ const upsertTrades = async (trades) => {
   console.log(`Upserting ${trades.length} Trades...`);
 
   const upsertTradesQuery = `
-    INSERT INTO trades (transaction_id, status_updated, adds, drops, draft_picks, price_check, rosters, league_id)
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+    INSERT INTO trades (transaction_id, status_updated, adds, drops, draft_picks, price_check, rosters, managers, players, league_id)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
     ON CONFLICT (transaction_id) DO UPDATE SET
-      draft_picks = EXCLUDED.draft_picks;
+      draft_picks = EXCLUDED.draft_picks,
+      players = EXCLUDED.players;
   `;
 
   for (const trade of trades) {
@@ -435,6 +485,8 @@ const upsertTrades = async (trades) => {
         JSON.stringify(trade.draft_picks),
         trade.price_check,
         JSON.stringify(trade.rosters),
+        trade.managers,
+        trade.players,
         trade.league_id,
       ]);
     } catch (err) {
