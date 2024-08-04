@@ -218,7 +218,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
                       (upcoming_draft?.draft_order &&
                         parseInt(upcoming_draft.season) ===
                           parseInt(dp.season) &&
-                        upcoming_draft.draft_order[dp?.roster_id]) ||
+                        upcoming_draft.draft_order[dp?.user_id]) ||
                       null,
                   };
                 });
