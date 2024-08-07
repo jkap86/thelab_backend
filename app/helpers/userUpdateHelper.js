@@ -10,6 +10,7 @@ const {
   fetchLeagueDrafts,
   fetchLeagueTradedPicks,
   fetchLeagueTransactions,
+  fetchLeagueMatchups,
 } = require("../api/sleeperApi");
 
 const updateUsers = async ({ league_ids_queue, state }) => {
@@ -95,6 +96,7 @@ parentPort.on("message", async (message) => {
 
 const updateLeaguesBatch = async (league_ids_batch, week) => {
   const tradesBatch = [];
+  const matchupsBatch = [];
   const updatedLeaguesBatch = [];
   const usersBatch = [];
   const userLeagueBatch = [];
@@ -112,6 +114,22 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
           const rosters = await fetchLeagueRosters(league_id);
 
           const users = await fetchLeagueUsers(league_id);
+
+          if (league.status === "in_season") {
+            const matchups = await fetchLeagueMatchups(league_id, week);
+
+            matchups.forEach((matchup) => {
+              matchupsBatch.push({
+                week: week,
+                league_id: league.league_id,
+                matchup_id: matchup.matchup_id,
+                roster_id: matchup.roster_id,
+                players: matchup.players,
+                starters: matchup.starters,
+                updatedat: new Date(),
+              });
+            });
+          }
 
           let drafts;
           if (league.settings.type === 2) {
@@ -161,6 +179,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
             name: league.name,
             avatar: league.avatar,
             season: league.season,
+            status: league.status,
             settings: league.settings,
             scoring_settings: league.scoring_settings,
             roster_positions: league.roster_positions,
@@ -266,6 +285,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
       await pool.query("BEGIN");
       await upsertLeagues(updatedLeaguesBatch);
       await upsertTrades(tradesBatch);
+      await upsertMatchups(matchupsBatch);
       await upsertUsers(usersBatch);
       await upsertUserLeagues(userLeagueBatch);
       await pool.query("COMMIT");
@@ -432,12 +452,13 @@ const upsertLeagues = async (updatedLeagues) => {
   console.log(`Upserting ${updatedLeagues.length} Leagues...`);
 
   const upsertLeaguesQuery = `
-    INSERT INTO leagues (league_id, name, avatar, season, settings, scoring_settings, roster_positions, rosters, updatedat)
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+    INSERT INTO leagues (league_id, name, avatar, season, status, settings, scoring_settings, roster_positions, rosters, updatedat)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
     ON CONFLICT (league_id) DO UPDATE SET
       name = EXCLUDED.name,
       avatar = EXCLUDED.avatar,
       season = EXCLUDED.season,
+      status = EXCLUDED.status,
       settings = EXCLUDED.settings,
       scoring_settings = EXCLUDED.scoring_settings,
       roster_positions = EXCLUDED.roster_positions,
@@ -452,6 +473,7 @@ const upsertLeagues = async (updatedLeagues) => {
         league.name,
         league.avatar,
         league.season,
+        league.status,
         JSON.stringify(league.settings),
         JSON.stringify(league.scoring_settings),
         JSON.stringify(league.roster_positions),
@@ -488,6 +510,36 @@ const upsertTrades = async (trades) => {
         trade.managers,
         trade.players,
         trade.league_id,
+      ]);
+    } catch (err) {
+      console.log(err.message);
+    }
+  }
+};
+
+const upsertMatchups = async (matchups) => {
+  console.log(`Upserting ${matchups.length} Matchups...`);
+
+  const upsertMatchupsQuery = `
+    INSERT INTO matchups (week, matchup_id, roster_id, players, starters, league_id, updatedat)
+    VALUES ($1, $2, $3, $4, $5, $6, $7)
+    ON CONFLICT (week, roster_id, league_id) DO UPDATE SET
+      matchup_id = EXCLUDED.matchup_id,
+      players = EXCLUDED.players,
+      starters = EXCLUDED.starters,
+      updatedat = EXCLUDED.updatedat
+  `;
+
+  for (const matchup of matchups) {
+    try {
+      await pool.query(upsertMatchupsQuery, [
+        matchup.week,
+        matchup.matchup_id,
+        matchup.roster_id,
+        matchup.players,
+        matchup.starters,
+        matchup.league_id,
+        matchup.updatedat,
       ]);
     } catch (err) {
       console.log(err.message);

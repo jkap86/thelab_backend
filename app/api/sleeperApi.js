@@ -117,6 +117,17 @@ const fetchLeagueTransactions = async (league_id, week) => {
   return transactions_week.data.filter((t) => t.status === "complete");
 };
 
+const fetchLeagueMatchups = async (league_id, week) => {
+  const matchups_week = await axiosInstance.get(
+    `https://api.sleeper.app/v1/league/${league_id}/matchups/${Math.max(
+      week,
+      1
+    )}`
+  );
+
+  return matchups_week.data;
+};
+
 const fetchDraftPicks = async (draft_id) => {
   const draft_picks = await axiosInstance.get(
     `https://api.sleeper.app/v1/draft/${draft_id}/picks`
@@ -138,5 +149,6 @@ module.exports = {
   fetchStats,
   fetchProjections,
   fetchLeagueTransactions,
+  fetchLeagueMatchups,
   fetchDraftPicks,
 };
