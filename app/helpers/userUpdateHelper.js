@@ -14,9 +14,10 @@ const {
 } = require("../api/sleeperApi");
 
 const updateUsers = async ({ league_ids_queue, state }) => {
-  console.log("Begin User Update...");
+  if (league_ids_queue.length < 100) {
+    console.log("Getting Users To Update...");
 
-  const getUserIdsQuery = `
+    const getUserIdsQuery = `
     SELECT user_id 
     FROM users 
     WHERE type IN ('S', 'LM')
@@ -24,34 +25,37 @@ const updateUsers = async ({ league_ids_queue, state }) => {
     LIMIT 100;
   `;
 
-  const users_to_update = await pool.query(getUserIdsQuery);
+    const users_to_update = await pool.query(getUserIdsQuery);
 
-  const league_ids_to_add = league_ids_queue;
+    const league_ids_to_add = league_ids_queue;
 
-  const batchSize = 10;
+    const batchSize = 10;
 
-  for (let i = 0; i < users_to_update.rows.length; i += batchSize) {
-    const batch = users_to_update.rows.slice(i, i + batchSize);
+    for (let i = 0; i < users_to_update.rows.length; i += batchSize) {
+      const batch = users_to_update.rows.slice(i, i + batchSize);
 
-    await Promise.all(
-      batch.map(async (user) => {
-        const leagues = await fetchUserLeagues(
-          user.user_id,
-          state.league_season
-        );
+      await Promise.all(
+        batch.map(async (user) => {
+          const leagues = await fetchUserLeagues(
+            user.user_id,
+            state.league_season
+          );
 
-        league_ids_to_add.push(
-          ...leagues
-            .filter((league) => !league_ids_to_add.includes(league.league_id))
-            .map((league) => league.league_id)
-        );
-      })
-    );
+          league_ids_to_add.push(
+            ...leagues
+              .filter((league) => !league_ids_to_add.includes(league.league_id))
+              .map((league) => league.league_id)
+          );
+        })
+      );
+    }
+
+    return {
+      league_ids_queue_updated: Array.from(new Set(league_ids_to_add)),
+    };
+  } else {
+    return { league_ids_queue_updated: league_ids_queue };
   }
-
-  return {
-    league_ids_queue_updated: Array.from(new Set(league_ids_to_add)),
-  };
 };
 
 const updateLeagues = async ({ league_ids_queue, state }) => {
