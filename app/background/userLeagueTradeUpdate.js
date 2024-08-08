@@ -11,12 +11,9 @@ module.exports = async (app) => {
     app.set("state", state.data);
   }, 1000);
 
-  const startUserUpdateWorker = async () => {
+  const startUserUpdateWorker = async (worker) => {
+    await app.set("syncing", true);
     console.log("Beginning User Update...");
-
-    const worker = new Worker(
-      path.resolve(__dirname, "../helpers/userUpdateHelper.js")
-    );
 
     const state = app.get("state");
     const league_ids_queue = app.get("league_ids_queue") || [];
@@ -24,30 +21,48 @@ module.exports = async (app) => {
     worker.postMessage({ league_ids_queue, state });
 
     worker.on("error", (error) => console.error(error));
-    worker.on("message", (message) => {
+    worker.once("message", (message) => {
       console.log({ queue: message.league_ids_queue_updated.length });
-      app.set("league_ids_queue", message.league_ids_queue_updated);
+      try {
+        app.set("league_ids_queue", message.league_ids_queue_updated);
+        app.set("syncing", false);
+        const used = process.memoryUsage();
+
+        for (let key in used) {
+          console.log(
+            `${key} ${Math.round((used[key] / 1024 / 1024) * 100) / 100} MB`
+          );
+        }
+      } catch (err) {
+        console.log(err.message);
+      }
     });
     worker.on("exit", (code) => {
-      if (code !== 0)
-        reject(new Error(`Worker stopped with exit code ${code}`));
+      if (code !== 0) {
+        console.error(new Error(`Worker stopped with exit code ${code}`));
+      } else {
+        console.log("Worker completed successfully");
+      }
     });
   };
 
-  setInterval(async () => {
+  const worker = new Worker(
+    path.resolve(__dirname, "../helpers/userUpdateHelper.js")
+  );
+
+  setTimeout(() => {
     if (!app.get("syncing")) {
-      await app.set("syncing", true);
-      await startUserUpdateWorker();
-      await app.set("syncing", false);
+      startUserUpdateWorker(worker);
     } else {
       console.log("Skipping User League syncs...");
     }
-    const used = process.memoryUsage();
+  }, 5 * 1000);
 
-    for (let key in used) {
-      console.log(
-        `${key} ${Math.round((used[key] / 1024 / 1024) * 100) / 100} MB`
-      );
+  setInterval(async () => {
+    if (!app.get("syncing")) {
+      await startUserUpdateWorker(worker);
+    } else {
+      console.log("Skipping User League syncs...");
     }
   }, 60 * 1000);
 };
