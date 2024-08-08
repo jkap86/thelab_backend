@@ -23,9 +23,14 @@ module.exports = async (app) => {
 
     worker.postMessage({ league_ids_queue, state });
 
+    worker.on("error", (error) => console.error(error));
     worker.on("message", (message) => {
       console.log({ queue: message.league_ids_queue_updated.length });
       app.set("league_ids_queue", message.league_ids_queue_updated);
+    });
+    worker.on("exit", (code) => {
+      if (code !== 0)
+        reject(new Error(`Worker stopped with exit code ${code}`));
     });
   };
 
