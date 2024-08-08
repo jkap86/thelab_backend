@@ -3,27 +3,34 @@
 const { Worker } = require("worker_threads");
 const path = require("path");
 
-module.exports = async () => {
+module.exports = async (app) => {
   const startKtcWorker = () => {
-    console.log("Starting KTC update...");
+    if (!app.get("syncing")) {
+      app.set("syncing", true);
+      console.log("Starting KTC update...");
 
-    const worker = new Worker(
-      path.resolve(__dirname, "../helpers/ktcUpdateHelper.js")
-    );
+      const worker = new Worker(
+        path.resolve(__dirname, "../helpers/ktcUpdateHelper.js")
+      );
 
-    worker.on("error", (error) => console.error(error));
-    worker.on("exit", (code) => {
-      if (code === 0) {
-        console.log("KTC update complete...");
-      } else {
-        console.error(`Worker stopped with exit code ${code}`);
-      }
-    });
+      worker.on("error", (error) => console.error(error));
+      worker.on("exit", (code) => {
+        if (code === 0) {
+          console.log("KTC update complete...");
+        } else {
+          console.error(`Worker stopped with exit code ${code}`);
+        }
+      });
+      app.set("syncing", false);
+    } else {
+      console.log("Delay KTC sync 15 sec");
+
+      setTimeout(startKtcWorker, 15000);
+    }
   };
 
   setTimeout(() => {
     startKtcWorker();
-
     setInterval(startKtcWorker, 1 * 60 * 60 * 1000);
   }, 15000);
 };

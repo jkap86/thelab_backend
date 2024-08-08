@@ -29,6 +29,12 @@ module.exports = async (app) => {
   };
 
   setInterval(() => {
-    startUserUpdateWorker();
+    if (!app.get("syncing")) {
+      app.set("syncing", true);
+      startUserUpdateWorker();
+      app.set("syncing", false);
+    } else {
+      console.log("Skipping User League syncs...");
+    }
   }, 60 * 1000);
 };

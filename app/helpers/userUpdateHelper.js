@@ -449,8 +449,6 @@ const getTeamDraftPicks = (league, rosters, users, drafts, traded_picks) => {
 };
 
 const upsertLeagues = async (updatedLeagues) => {
-  console.log(`Upserting ${updatedLeagues.length} Leagues...`);
-
   const upsertLeaguesQuery = `
     INSERT INTO leagues (league_id, name, avatar, season, status, settings, scoring_settings, roster_positions, rosters, updatedat)
     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
@@ -487,8 +485,6 @@ const upsertLeagues = async (updatedLeagues) => {
 };
 
 const upsertTrades = async (trades) => {
-  console.log(`Upserting ${trades.length} Trades...`);
-
   const upsertTradesQuery = `
     INSERT INTO trades (transaction_id, status_updated, adds, drops, draft_picks, price_check, rosters, managers, players, league_id)
     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
@@ -518,8 +514,6 @@ const upsertTrades = async (trades) => {
 };
 
 const upsertMatchups = async (matchups) => {
-  console.log(`Upserting ${matchups.length} Matchups...`);
-
   const upsertMatchupsQuery = `
     INSERT INTO matchups (week, matchup_id, roster_id, players, starters, league_id, updatedat)
     VALUES ($1, $2, $3, $4, $5, $6, $7)
@@ -548,8 +542,6 @@ const upsertMatchups = async (matchups) => {
 };
 
 const upsertUsers = async (users) => {
-  console.log(`Upserting ${users.length} users...`);
-
   const upsertUsersQuery = `
     INSERT INTO users (user_id, username, avatar, type, updatedat, createdat)
     VALUES ($1, $2, $3, $4, $5, $6)
@@ -576,8 +568,6 @@ const upsertUsers = async (users) => {
 };
 
 const upsertUserLeagues = async (userLeagues) => {
-  console.log(`Upserting ${userLeagues.length} users...`);
-
   const upsertUserLeaguesQuery = `
     INSERT INTO userLeagues (user_id, league_id)
     VALUES ($1, $2)

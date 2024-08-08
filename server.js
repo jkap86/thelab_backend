@@ -15,6 +15,6 @@ require("./app/routes/ktc.routes")(app);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 
-  require("./app/background/ktcUpdate")();
+  require("./app/background/ktcUpdate")(app);
   require("./app/background/userLeagueTradeUpdate")(app);
 });
