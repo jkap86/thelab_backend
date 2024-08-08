@@ -221,6 +221,16 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
                   });
 
                 const draft_picks = t.draft_picks.map((dp) => {
+                  const original_user_id = rosters_w_username.find(
+                    (ru) => ru.roster_id === dp.roster_id
+                  )?.user_id;
+
+                  const order =
+                    (upcoming_draft?.draft_order &&
+                      parseInt(upcoming_draft.season) === parseInt(dp.season) &&
+                      upcoming_draft.draft_order[original_user_id]) ||
+                    null;
+
                   return {
                     round: dp.round,
                     season: dp.season,
@@ -233,12 +243,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
                     original: rosters_w_username.find(
                       (ru) => ru.roster_id === dp.roster_id
                     ).user_id,
-                    order:
-                      (upcoming_draft?.draft_order &&
-                        parseInt(upcoming_draft.season) ===
-                          parseInt(dp.season) &&
-                        upcoming_draft.draft_order[dp?.user_id]) ||
-                      null,
+                    order: order,
                   };
                 });
 
@@ -489,8 +494,7 @@ const upsertTrades = async (trades) => {
     INSERT INTO trades (transaction_id, status_updated, adds, drops, draft_picks, price_check, rosters, managers, players, league_id)
     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
     ON CONFLICT (transaction_id) DO UPDATE SET
-      draft_picks = EXCLUDED.draft_picks,
-      players = EXCLUDED.players;
+      draft_picks = EXCLUDED.draft_picks;
   `;
 
   for (const trade of trades) {
