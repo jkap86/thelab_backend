@@ -38,7 +38,7 @@ module.exports = async (app) => {
   };
 
   setTimeout(() => {
-    // startKtcWorker();
+    startKtcWorker();
     setInterval(startKtcWorker, 1 * 60 * 60 * 1000);
   }, 15000);
 };

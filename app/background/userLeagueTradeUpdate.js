@@ -50,14 +50,6 @@ module.exports = async (app) => {
     path.resolve(__dirname, "../helpers/userUpdateHelper.js")
   );
 
-  setTimeout(() => {
-    if (!app.get("syncing")) {
-      startUserUpdateWorker(worker);
-    } else {
-      console.log("Skipping User League syncs...");
-    }
-  }, 5 * 1000);
-
   setInterval(async () => {
     if (!app.get("syncing")) {
       await startUserUpdateWorker(worker);
