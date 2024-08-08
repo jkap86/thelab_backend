@@ -59,7 +59,7 @@ const updateUsers = async ({ league_ids_queue, state }) => {
 };
 
 const updateLeagues = async ({ league_ids_queue, state }) => {
-  const league_ids_to_update = league_ids_queue.slice(0, 50);
+  const league_ids_to_update = league_ids_queue.slice(0, 100);
 
   const batchSize = 5;
 
