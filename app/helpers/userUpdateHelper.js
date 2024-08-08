@@ -40,7 +40,11 @@ const updateUsers = async ({ league_ids_queue, state }) => {
           state.league_season
         );
 
-        league_ids_to_add.push(...leagues.map((league) => league.league_id));
+        league_ids_to_add.push(
+          ...leagues
+            .filter((league) => !league_ids_to_add.includes(league.league_id))
+            .map((league) => league.league_id)
+        );
       })
     );
   }
@@ -236,13 +240,13 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
                     season: dp.season,
                     new: rosters_w_username.find(
                       (ru) => ru.roster_id === dp.owner_id
-                    ).user_id,
+                    )?.user_id,
                     old: rosters_w_username.find(
                       (ru) => ru.roster_id === dp.previous_owner_id
-                    ).user_id,
+                    )?.user_id,
                     original: rosters_w_username.find(
                       (ru) => ru.roster_id === dp.roster_id
-                    ).user_id,
+                    )?.user_id,
                     order: order,
                   };
                 });

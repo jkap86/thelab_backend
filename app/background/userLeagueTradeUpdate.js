@@ -11,7 +11,7 @@ module.exports = async (app) => {
     app.set("state", state.data);
   }, 1000);
 
-  const startUserUpdateWorker = () => {
+  const startUserUpdateWorker = async () => {
     console.log("Beginning User Update...");
 
     const worker = new Worker(
@@ -24,17 +24,25 @@ module.exports = async (app) => {
     worker.postMessage({ league_ids_queue, state });
 
     worker.on("message", (message) => {
+      console.log({ queue: message.league_ids_queue_updated.length });
       app.set("league_ids_queue", message.league_ids_queue_updated);
     });
   };
 
-  setInterval(() => {
+  setInterval(async () => {
     if (!app.get("syncing")) {
-      app.set("syncing", true);
-      startUserUpdateWorker();
-      app.set("syncing", false);
+      await app.set("syncing", true);
+      await startUserUpdateWorker();
+      await app.set("syncing", false);
     } else {
       console.log("Skipping User League syncs...");
+    }
+    const used = process.memoryUsage();
+
+    for (let key in used) {
+      console.log(
+        `${key} ${Math.round((used[key] / 1024 / 1024) * 100) / 100} MB`
+      );
     }
   }, 60 * 1000);
 };
