@@ -41,10 +41,25 @@ const updateUsers = async ({ league_ids_queue, state }) => {
             state.league_season
           );
 
+          const league_ids = leagues.map((league) => league.league_id);
+
+          const upToDateLeaguesQuery = `
+            SELECT league_id
+            FROM leagues
+            WHERE league_id = ANY($1)
+              AND updatedat >= NOW() - INTERVAL '1 HOUR'
+            ORDER BY updatedat ASC;
+          `;
+
+          const upToDateLeague_ids = await pool.query(upToDateLeaguesQuery, [
+            league_ids,
+          ]);
           league_ids_to_add.push(
-            ...leagues
-              .filter((league) => !league_ids_to_add.includes(league.league_id))
-              .map((league) => league.league_id)
+            ...league_ids.filter(
+              (league_id) =>
+                !league_ids_to_add.includes(league_id) &&
+                !upToDateLeague_ids.rows.some((x) => x === league_id)
+            )
           );
         })
       );
