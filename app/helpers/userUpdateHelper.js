@@ -18,12 +18,12 @@ const updateUsers = async ({ league_ids_queue, state }) => {
     console.log("Getting Users To Update...");
 
     const getUserIdsQuery = `
-    SELECT user_id 
-    FROM users 
-    WHERE type IN ('S', 'LM')
-    ORDER BY updatedAt ASC 
-    LIMIT 100;
-  `;
+      SELECT user_id 
+      FROM users 
+      WHERE type IN ('S', 'LM')
+      ORDER BY updatedAt ASC 
+      LIMIT 100;
+    `;
 
     const users_to_update = await pool.query(getUserIdsQuery);
 

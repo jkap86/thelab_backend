@@ -13,7 +13,10 @@ module.exports = async (app) => {
         path.resolve(__dirname, "../helpers/ktcUpdateHelper.js")
       );
 
-      worker.on("error", (error) => console.error(error));
+      worker.on("error", (error) => {
+        app.set("syncing", false);
+        console.error(error);
+      });
       worker.on("exit", (code) => {
         if (code === 0) {
           console.log("KTC update complete...");
