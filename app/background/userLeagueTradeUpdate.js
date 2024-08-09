@@ -25,7 +25,7 @@ module.exports = async (app) => {
       console.log({ queue: message.league_ids_queue_updated.length });
       try {
         app.set("league_ids_queue", message.league_ids_queue_updated);
-        app.set("syncing", false);
+
         const used = process.memoryUsage();
 
         for (let key in used) {
@@ -36,6 +36,7 @@ module.exports = async (app) => {
       } catch (err) {
         console.log(err.message);
       }
+      app.set("syncing", false);
     });
     worker.on("exit", (code) => {
       if (code !== 0) {
