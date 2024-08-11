@@ -20,9 +20,13 @@ module.exports = async (app) => {
 
     worker.postMessage({ league_ids_queue, state });
 
-    worker.on("error", (error) => console.error(error));
+    worker.on("error", (error) => {
+      app.set("syncing", false);
+      console.error(error);
+    });
     worker.once("message", (message) => {
       console.log({ queue: message.league_ids_queue_updated.length });
+      app.set("syncing", false);
       try {
         app.set("league_ids_queue", message.league_ids_queue_updated);
 
@@ -36,7 +40,6 @@ module.exports = async (app) => {
       } catch (err) {
         console.log(err.message);
       }
-      app.set("syncing", false);
     });
     worker.on("exit", (code) => {
       if (code !== 0) {

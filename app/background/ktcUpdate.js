@@ -34,8 +34,6 @@ module.exports = async (app) => {
 
       app.set("syncing", false);
     } else {
-      console.log("Delay KTC sync 15 sec");
-
       setTimeout(startKtcWorker, 15000);
     }
   };
