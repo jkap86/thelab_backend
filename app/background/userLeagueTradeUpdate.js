@@ -57,8 +57,6 @@ module.exports = async (app) => {
   setInterval(async () => {
     if (!app.get("syncing")) {
       await startUserUpdateWorker(worker);
-    } else {
-      console.log("Skipping User League syncs...");
     }
   }, 60 * 1000);
 };
