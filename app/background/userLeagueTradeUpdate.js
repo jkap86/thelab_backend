@@ -54,9 +54,7 @@ module.exports = async (app) => {
 
   setInterval(async () => {
     if (!app.get("syncing")) {
-      app.set("syncing", true);
       await startUserUpdateWorker(worker);
-      app.set("syncing", false);
     }
   }, 60 * 1000);
 };

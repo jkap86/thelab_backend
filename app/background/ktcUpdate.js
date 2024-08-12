@@ -6,7 +6,6 @@ const path = require("path");
 module.exports = async (app) => {
   const startKtcWorker = () => {
     if (!app.get("syncing")) {
-      app.set("syncing", true);
       console.log("Starting KTC update...");
 
       const worker = new Worker(
@@ -14,7 +13,6 @@ module.exports = async (app) => {
       );
 
       worker.on("error", (error) => {
-        app.set("syncing", false);
         console.error(error);
       });
       worker.on("exit", (code) => {
@@ -31,8 +29,6 @@ module.exports = async (app) => {
           );
         }
       });
-
-      app.set("syncing", false);
     } else {
       setTimeout(startKtcWorker, 15000);
     }
