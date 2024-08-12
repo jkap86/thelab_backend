@@ -12,7 +12,6 @@ module.exports = async (app) => {
   }, 1000);
 
   const startUserUpdateWorker = async (worker) => {
-    await app.set("syncing", true);
     console.log("Beginning User Update...");
 
     const state = app.get("state");
@@ -21,12 +20,11 @@ module.exports = async (app) => {
     worker.postMessage({ league_ids_queue, state });
 
     worker.on("error", (error) => {
-      app.set("syncing", false);
       console.error(error);
     });
     worker.once("message", (message) => {
       console.log({ queue: message.league_ids_queue_updated.length });
-      app.set("syncing", false);
+
       try {
         app.set("league_ids_queue", message.league_ids_queue_updated);
 
@@ -56,7 +54,9 @@ module.exports = async (app) => {
 
   setInterval(async () => {
     if (!app.get("syncing")) {
+      app.set("syncing", true);
       await startUserUpdateWorker(worker);
+      app.set("syncing", false);
     }
   }, 60 * 1000);
 };
