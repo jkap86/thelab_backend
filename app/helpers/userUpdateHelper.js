@@ -54,13 +54,16 @@ const updateUsers = async ({ league_ids_queue, state }) => {
           const upToDateLeague_ids = await pool.query(upToDateLeaguesQuery, [
             league_ids,
           ]);
-          league_ids_to_add.push(
-            ...league_ids.filter(
-              (league_id) =>
-                !league_ids_to_add.includes(league_id) &&
-                !upToDateLeague_ids.rows.some((x) => x.league_id === league_id)
-            )
+
+          const outOfDateLeague_ids = league_ids.filter(
+            (league_id) =>
+              !league_ids_to_add.includes(league_id) &&
+              !upToDateLeague_ids.rows
+                .map((r) => r.league_id)
+                .includes(league_id)
           );
+
+          league_ids_to_add.push(...outOfDateLeague_ids);
         })
       );
     }
@@ -85,7 +88,11 @@ const updateLeagues = async ({ league_ids_queue, state }) => {
 
     const processedLeagues = await updateLeaguesBatch(
       league_ids_batch,
-      state.display_week
+      state.season_type === "pre"
+        ? 1
+        : state.season_type === "post"
+        ? 18
+        : state.display_week
     );
 
     updatedLeagues.push(...processedLeagues);
