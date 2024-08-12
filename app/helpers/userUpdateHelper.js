@@ -47,7 +47,7 @@ const updateUsers = async ({ league_ids_queue, state }) => {
             SELECT league_id
             FROM leagues
             WHERE league_id = ANY($1)
-              AND updatedat <= NOW() - INTERVAL '1 HOUR'
+              AND updatedat >= NOW() - INTERVAL '1 HOUR'
             ORDER BY updatedat ASC;
           `;
 
@@ -58,7 +58,7 @@ const updateUsers = async ({ league_ids_queue, state }) => {
             ...league_ids.filter(
               (league_id) =>
                 !league_ids_to_add.includes(league_id) &&
-                !upToDateLeague_ids.rows.some((x) => x === league_id)
+                !upToDateLeague_ids.rows.some((x) => x.league_id === league_id)
             )
           );
         })
