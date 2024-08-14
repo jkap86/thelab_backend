@@ -218,8 +218,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
 
         const upcoming_draft = drafts?.find(
           (x) =>
-            x.status !== "complete" &&
-            x.settings.rounds === league.settings.draft_rounds
+            x.draft_order && x.settings.rounds === league.settings.draft_rounds
         );
 
         tradesBatch.push(
