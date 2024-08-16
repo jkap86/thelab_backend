@@ -43,27 +43,26 @@ const updateUsers = async ({ league_ids_queue, state }) => {
 
           const league_ids = leagues.map((league) => league.league_id);
 
-          const upToDateLeaguesQuery = `
+          const existingLeaguesQuery = `
             SELECT league_id
             FROM leagues
             WHERE league_id = ANY($1)
-              AND updatedat >= NOW() - INTERVAL '1 HOUR'
             ORDER BY updatedat ASC;
           `;
 
-          const upToDateLeague_ids = await pool.query(upToDateLeaguesQuery, [
+          const existingLeague_ids = await pool.query(existingLeaguesQuery, [
             league_ids,
           ]);
 
-          const outOfDateLeague_ids = league_ids.filter(
+          const newLeague_ids = league_ids.filter(
             (league_id) =>
               !league_ids_to_add.includes(league_id) &&
-              !upToDateLeague_ids.rows
+              !existingLeague_ids.rows
                 .map((r) => r.league_id)
                 .includes(league_id)
           );
 
-          league_ids_to_add.push(...outOfDateLeague_ids);
+          league_ids_to_add.push(...newLeague_ids);
         })
       );
     }
@@ -78,6 +77,23 @@ const updateUsers = async ({ league_ids_queue, state }) => {
 
 const updateLeagues = async ({ league_ids_queue, state }) => {
   const league_ids_to_update = league_ids_queue.slice(0, 100);
+
+  if (league_ids_to_update.length < 100) {
+    const outOfDateLeaguesQuery = `
+      SELECT league_id
+      FROM leagues
+      ORDER BY updatedat ASC
+      LIMIT $1;
+    `;
+
+    const outOfDateLeagues = await pool.query(outOfDateLeaguesQuery, [
+      100 - league_ids_to_update.length,
+    ]);
+
+    const outOfDateLeagueIds = outOfDateLeagues.rows.map((l) => l.league_id);
+
+    league_ids_to_update.push(...outOfDateLeagueIds);
+  }
 
   const batchSize = 5;
 
@@ -305,7 +321,17 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
             })
         );
       } catch (err) {
-        console.log(err.message);
+        if (err.response?.status === 404) {
+          const deleteQuery = `
+            DELETE FROM leagues WHERE league_id = $1;
+          `;
+
+          const deleted = await pool.query(deleteQuery, [league_id]);
+
+          console.log(`${deleted.rowCount} leagues deleted - ${league_id}`);
+        } else {
+          console.log(err.message + " " + league_id);
+        }
       }
     })
   );
