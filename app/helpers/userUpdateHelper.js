@@ -292,15 +292,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
               return {
                 ...t,
                 league_id: league.league_id,
-                rosters: rosters_w_username.map((ru) => {
-                  return {
-                    rosters_id: ru.roster_id,
-                    username: ru.username,
-                    user_id: ru.user_id,
-                    avatar: ru.avatar,
-                    players: ru.players || [],
-                  };
-                }),
+                rosters: rosters_w_username,
                 draft_picks: draft_picks,
                 price_check: [""],
                 managers: Array.from(
