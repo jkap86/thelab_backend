@@ -127,6 +127,7 @@ parentPort.on("message", async (message) => {
   const { league_ids_queue, state } = message;
 
   try {
+    await moveOldTrades();
     const result = await updateUsers({ league_ids_queue, state });
 
     const result2 = await updateLeagues({
@@ -674,5 +675,69 @@ const upsertUserLeagues = async (userLeagues) => {
     await pool.query(upsertUserLeaguesQuery, values);
   } catch (err) {
     console.log(err.message + " USERLEAGUES");
+  }
+};
+
+const moveOldTrades = async () => {
+  const client = await pool.connect();
+
+  try {
+    await client.query("BEGIN");
+
+    const getOldTradesQuery = `
+      SELECT *
+      FROM trades
+      WHERE to_timestamp(status_updated / 1000) < now() - interval '30 days';
+    `;
+
+    const result = await pool.query(getOldTradesQuery);
+
+    console.log({ result: result.rowCount });
+
+    if (result.rows.length > 0) {
+      const upsertTradesQuery = `
+        INSERT INTO trades_old (transaction_id, status_updated, adds, drops, draft_picks, price_check, rosters, managers, players, league_id)
+        VALUES ${result.rows
+          .map(
+            (_, i) =>
+              `($${i * 10 + 1}, $${i * 10 + 2}, $${i * 10 + 3}, $${
+                i * 10 + 4
+              }, $${i * 10 + 5}, $${i * 10 + 6}, $${i * 10 + 7}, $${
+                i * 10 + 8
+              }, $${i * 10 + 9}, $${i * 10 + 10})`
+          )
+          .join(", ")}
+        ON CONFLICT (transaction_id) DO UPDATE SET
+          draft_picks = EXCLUDED.draft_picks;
+      `;
+
+      const values = result.rows.flatMap((trade) => [
+        trade.transaction_id,
+        trade.status_updated,
+        JSON.stringify(trade.adds),
+        JSON.stringify(trade.drops),
+        JSON.stringify(trade.draft_picks),
+        trade.price_check,
+        JSON.stringify(trade.rosters),
+        trade.managers,
+        trade.players,
+        trade.league_id,
+      ]);
+
+      await client.query(upsertTradesQuery, values);
+
+      const deleteOldTradesQuery = `
+        DELETE FROM trades
+        WHERE to_timestamp(status_updated / 1000) < now() - interval '30 days';
+      `;
+
+      await client.query(deleteOldTradesQuery);
+    }
+    await client.query("COMMIT");
+  } catch (err) {
+    await client.query("ROLLBACK");
+    console.error("Error moving old trades:", err);
+  } finally {
+    client.release();
   }
 };

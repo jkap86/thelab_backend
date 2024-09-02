@@ -52,9 +52,9 @@ module.exports = async (app) => {
     path.resolve(__dirname, "../helpers/userUpdateHelper.js")
   );
 
-  setInterval(async () => {
-    if (!app.get("syncing")) {
-      await startUserUpdateWorker(worker);
-    }
-  }, 60 * 1000);
+  const userUpdateInterval = async () => {
+    await startUserUpdateWorker(worker);
+
+    setTimeout(userUpdateInterval, 60 * 1000);
+  };
 };
