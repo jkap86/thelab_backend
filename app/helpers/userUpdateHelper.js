@@ -687,7 +687,8 @@ const moveOldTrades = async () => {
     const getOldTradesQuery = `
       SELECT *
       FROM trades
-      WHERE to_timestamp(status_updated / 1000) < now() - interval '30 days';
+      WHERE to_timestamp(status_updated / 1000) < now() - interval '30 days'
+      LIMIT 100;
     `;
 
     const result = await pool.query(getOldTradesQuery);
@@ -728,10 +729,12 @@ const moveOldTrades = async () => {
 
       const deleteOldTradesQuery = `
         DELETE FROM trades
-        WHERE to_timestamp(status_updated / 1000) < now() - interval '30 days';
+        WHERE transaction_id = ANY($1);
       `;
 
-      await client.query(deleteOldTradesQuery);
+      await client.query(deleteOldTradesQuery, [
+        result.rows.map((t) => t.transaction_id),
+      ]);
     }
     await client.query("COMMIT");
   } catch (err) {
