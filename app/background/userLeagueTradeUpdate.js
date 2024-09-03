@@ -58,5 +58,5 @@ module.exports = async (app) => {
     setTimeout(userUpdateInterval, 60 * 1000);
   };
 
-  userUpdateInterval();
+  setTimeout(userUpdateInterval, 30 * 1000);
 };
