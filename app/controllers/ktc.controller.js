@@ -7,9 +7,14 @@ exports.current = (req, res) => {
 
   const ktc_dates = JSON.parse(ktc_dates_raw);
 
+  let days = 0;
+
+  if (req.query.days) {
+    days = req.query.days;
+  }
   const current_date = Object.keys(ktc_dates).sort(
     (a, b) => new Date(b) - new Date(a)
-  )[0];
+  )[days];
 
   const current_values_obj = ktc_dates[current_date];
 
