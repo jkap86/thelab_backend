@@ -108,7 +108,7 @@ const updateLeagues = async ({ league_ids_queue, state }) => {
         ? 1
         : state.season_type === "post"
         ? 18
-        : state.display_week
+        : state.leg
     );
 
     updatedLeagues.push(...processedLeagues);
@@ -688,7 +688,7 @@ const moveOldTrades = async () => {
       SELECT *
       FROM trades
       WHERE to_timestamp(status_updated / 1000) < now() - interval '30 days'
-      LIMIT 100;
+      LIMIT 1000;
     `;
 
     const result = await pool.query(getOldTradesQuery);
