@@ -483,8 +483,9 @@ const updateLeaguesBatch = async (league_ids_batch, week, league_ids_queue) => {
       await upsertMatchups(matchupsBatch);
       await upsertUsers(usersBatch);
       await upsertUserLeagues(userLeagueBatch);
-      await pool.query("COMMIT");
       await deleteLeagues[leagues_to_delete];
+      await pool.query("COMMIT");
+
       return updatedLeaguesBatch.map((league) => league.league_id);
     } catch (err) {
       await pool.query("ROLLBACK");
