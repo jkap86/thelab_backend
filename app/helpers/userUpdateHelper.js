@@ -108,7 +108,8 @@ const updateLeagues = async ({ league_ids_queue, state }) => {
         ? 1
         : state.season_type === "post"
         ? 18
-        : state.leg
+        : state.leg,
+      league_ids_queue
     );
 
     updatedLeagues.push(...processedLeagues);
@@ -141,12 +142,26 @@ parentPort.on("message", async (message) => {
   }
 });
 
-const updateLeaguesBatch = async (league_ids_batch, week) => {
+const deleteLeagues = async (league_ids) => {
+  if (league_ids.length === 0) {
+    return;
+  }
+  const deleteQuery = `
+            DELETE FROM leagues WHERE league_id = ANY($1);
+          `;
+
+  const deleted = await pool.query(deleteQuery, [league_ids]);
+
+  console.log(`${deleted.rowCount} leagues deleted - ${league_ids}`);
+};
+
+const updateLeaguesBatch = async (league_ids_batch, week, league_ids_queue) => {
   const tradesBatch = [];
   const matchupsBatch = [];
   const updatedLeaguesBatch = [];
   const usersBatch = [];
   const userLeagueBatch = [];
+  const leagues_to_delete = [];
 
   await Promise.all(
     league_ids_batch.map(async (league_id) => {
@@ -245,23 +260,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
               const adds = {};
               const drops = {};
 
-              t.adds &&
-                Object.keys(t.adds).forEach((add) => {
-                  const manager = rosters_w_username.find(
-                    (ru) => ru.roster_id === t.adds[add]
-                  );
-
-                  adds[add] = manager?.user_id;
-                });
-
-              t.drops &&
-                Object.keys(t.drops).forEach((drop) => {
-                  const manager = rosters_w_username.find(
-                    (ru) => ru.roster_id === t.drops[drop]
-                  );
-
-                  drops[drop] = manager?.user_id;
-                });
+              const price_check = [];
 
               const draft_picks = t.draft_picks.map((dp) => {
                 const original_user_id = rosters_w_username.find(
@@ -290,16 +289,47 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
                 };
               });
 
+              t.adds &&
+                Object.keys(t.adds).forEach((add) => {
+                  const manager = rosters_w_username.find(
+                    (ru) => ru.roster_id === t.adds[add]
+                  );
+
+                  adds[add] = manager?.user_id;
+
+                  const count =
+                    Object.keys(t.adds).forEach(
+                      (a) => t.adds[a] === manager?.roster_id
+                    )?.length +
+                    draft_picks.filter(
+                      (dp) => dp.owner_id === manager?.roster_id
+                    )?.length;
+
+                  if (count === 1) {
+                    price_check.push(add);
+                  }
+                });
+
+              t.drops &&
+                Object.keys(t.drops).forEach((drop) => {
+                  const manager = rosters_w_username.find(
+                    (ru) => ru.roster_id === t.drops[drop]
+                  );
+
+                  drops[drop] = manager?.user_id;
+                });
+
               return {
                 ...t,
                 league_id: league.league_id,
                 rosters: rosters_w_username,
                 draft_picks: draft_picks,
-                price_check: [""],
+                price_check: price_check,
                 managers: Array.from(
                   new Set([
                     ...Object.values(adds || {}),
                     ...Object.values(drops || {}),
+                    ...draft_picks.map((dp) => dp.new),
                   ])
                 ),
                 players: [
@@ -313,15 +343,131 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
               };
             })
         );
+
+        if (league_ids_queue.includes(league_id)) {
+          let prev_week = week - 1;
+
+          while (prev_week > 0) {
+            const transactions_prev = await fetchLeagueTransactions(
+              league_id,
+              prev_week
+            );
+
+            tradesBatch.push(
+              ...transactions_prev
+                .filter((t) => t.type === "trade" && t.status === "complete")
+                .map((t) => {
+                  const adds = {};
+                  const drops = {};
+
+                  const price_check = [];
+
+                  const draft_picks = t.draft_picks.map((dp) => {
+                    const original_user_id = rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.roster_id
+                    )?.user_id;
+
+                    const order =
+                      (upcoming_draft?.draft_order &&
+                        parseInt(upcoming_draft.season) ===
+                          parseInt(dp.season) &&
+                        upcoming_draft.draft_order[original_user_id]) ||
+                      null;
+
+                    return {
+                      round: dp.round,
+                      season: dp.season,
+                      new: rosters_w_username.find(
+                        (ru) => ru.roster_id === dp.owner_id
+                      )?.user_id,
+                      old: rosters_w_username.find(
+                        (ru) => ru.roster_id === dp.previous_owner_id
+                      )?.user_id,
+                      original: rosters_w_username.find(
+                        (ru) => ru.roster_id === dp.roster_id
+                      )?.user_id,
+                      order: order,
+                    };
+                  });
+
+                  t.adds &&
+                    Object.keys(t.adds).forEach((add) => {
+                      const manager = rosters_w_username.find(
+                        (ru) => ru.roster_id === t.adds[add]
+                      );
+
+                      adds[add] = manager?.user_id;
+
+                      const count =
+                        Object.keys(t.adds).forEach(
+                          (a) => t.adds[a] === manager.roster_id
+                        )?.length +
+                        draft_picks.filter(
+                          (dp) => dp.owner_id === manager.roster_id
+                        )?.length;
+
+                      if (count === 1) {
+                        price_check.push(add);
+                      }
+                    });
+
+                  t.drops &&
+                    Object.keys(t.drops).forEach((drop) => {
+                      const manager = rosters_w_username.find(
+                        (ru) => ru.roster_id === t.drops[drop]
+                      );
+
+                      drops[drop] = manager?.user_id;
+                    });
+
+                  return {
+                    ...t,
+                    league_id: league.league_id,
+                    rosters: rosters_w_username,
+                    draft_picks: draft_picks,
+                    price_check: price_check,
+                    managers: Array.from(
+                      new Set([
+                        ...Object.values(adds || {}),
+                        ...Object.values(drops || {}),
+                        ...draft_picks.map((dp) => dp.new),
+                      ])
+                    ),
+                    players: [
+                      ...Object.keys(t.adds || {}),
+                      ...draft_picks.map(
+                        (pick) => `${pick.season} ${pick.round}.${pick.order}`
+                      ),
+                    ],
+                    adds: adds,
+                    drops: drops,
+                  };
+                })
+            );
+
+            const matchups_prev = await fetchLeagueMatchups(
+              league_id,
+              prev_week
+            );
+
+            matchups_prev.forEach((matchup) => {
+              matchupsBatch.push({
+                week: prev_week,
+                league_id: league.league_id,
+                matchup_id: matchup.matchup_id,
+                roster_id: matchup.roster_id,
+                players: matchup.players,
+                starters: matchup.starters,
+                updatedat: new Date(),
+              });
+            });
+
+            prev_week--;
+          }
+        }
       } catch (err) {
         if (err.response?.status === 404) {
-          const deleteQuery = `
-            DELETE FROM leagues WHERE league_id = $1;
-          `;
-
-          const deleted = await pool.query(deleteQuery, [league_id]);
-
-          console.log(`${deleted.rowCount} leagues deleted - ${league_id}`);
+          leagues_to_delete.push(league_id);
         } else {
           console.log(err.message + " " + league_id);
         }
@@ -338,6 +484,7 @@ const updateLeaguesBatch = async (league_ids_batch, week) => {
       await upsertUsers(usersBatch);
       await upsertUserLeagues(userLeagueBatch);
       await pool.query("COMMIT");
+      await deleteLeagues[leagues_to_delete];
       return updatedLeaguesBatch.map((league) => league.league_id);
     } catch (err) {
       await pool.query("ROLLBACK");
@@ -560,7 +707,9 @@ const upsertTrades = async (trades) => {
        )
        .join(", ")}
     ON CONFLICT (transaction_id) DO UPDATE SET
-      draft_picks = EXCLUDED.draft_picks;
+      draft_picks = EXCLUDED.draft_picks,
+      price_check = EXCLUDED.price_check,
+      managers = EXCLUDED.managers;
   `;
 
   const values = trades.flatMap((trade) => [
