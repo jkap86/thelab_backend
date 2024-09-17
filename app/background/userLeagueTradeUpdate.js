@@ -4,12 +4,16 @@ const { Worker } = require("worker_threads");
 const path = require("path");
 const axios = require("axios");
 
-module.exports = async (app) => {
-  setTimeout(async () => {
-    const state = await axios.get("https://api.sleeper.app/v1/state/nfl");
+const getState = async (app) => {
+  const state = await axios.get("https://api.sleeper.app/v1/state/nfl");
 
-    app.set("state", state.data);
-  }, 1000);
+  console.log({ WEEK: state.data.leg });
+
+  app.set("state", state.data);
+};
+module.exports = async (app) => {
+  await getState(app);
+  setInterval(async () => await getState(app), 3 * 60 * 60 * 1000);
 
   const startUserUpdateWorker = async (worker) => {
     console.log("Beginning User Update...");
