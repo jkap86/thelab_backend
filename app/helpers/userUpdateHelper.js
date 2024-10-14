@@ -170,8 +170,12 @@ const updateLeaguesBatch = async (league_ids_batch, week, league_ids_queue) => {
       try {
         const league = await fetchLeague(league_id);
 
-        const rosters = await fetchLeagueRosters(league_id);
-
+        let rosters;
+        try {
+          rosters = await fetchLeagueRosters(league_id);
+        } catch (err) {
+          rosters = [];
+        }
         const users = await fetchLeagueUsers(league_id);
 
         if (league.status === "in_season") {
@@ -483,7 +487,7 @@ const updateLeaguesBatch = async (league_ids_batch, week, league_ids_queue) => {
       await upsertMatchups(matchupsBatch);
       await upsertUsers(usersBatch);
       await upsertUserLeagues(userLeagueBatch);
-      await deleteLeagues[leagues_to_delete];
+      await deleteLeagues(leagues_to_delete);
       await pool.query("COMMIT");
 
       return updatedLeaguesBatch.map((league) => league.league_id);
