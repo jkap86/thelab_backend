@@ -13,8 +13,10 @@ const {
   fetchLeagueMatchups,
 } = require("../api/sleeperApi");
 
+const increment_leagues = 250;
+
 const updateUsers = async ({ league_ids_queue, state }) => {
-  if (league_ids_queue.length < 100) {
+  if (league_ids_queue.length < increment_leagues) {
     console.log("Getting Users To Update...");
 
     const getUserIdsQuery = `
@@ -76,9 +78,9 @@ const updateUsers = async ({ league_ids_queue, state }) => {
 };
 
 const updateLeagues = async ({ league_ids_queue, state }) => {
-  const league_ids_to_update = league_ids_queue.slice(0, 100);
+  const league_ids_to_update = league_ids_queue.slice(0, increment_leagues);
 
-  if (league_ids_to_update.length < 100) {
+  if (league_ids_to_update.length < increment_leagues) {
     const outOfDateLeaguesQuery = `
       SELECT league_id
       FROM leagues
@@ -87,7 +89,7 @@ const updateLeagues = async ({ league_ids_queue, state }) => {
     `;
 
     const outOfDateLeagues = await pool.query(outOfDateLeaguesQuery, [
-      100 - league_ids_to_update.length,
+      increment_leagues - league_ids_to_update.length,
     ]);
 
     const outOfDateLeagueIds = outOfDateLeagues.rows.map((l) => l.league_id);
@@ -250,104 +252,106 @@ const updateLeaguesBatch = async (league_ids_batch, week, league_ids_queue) => {
           updatedat: new Date(),
         });
 
-        const transactions = await fetchLeagueTransactions(league_id, week);
+        if (league.status === "in_season") {
+          const transactions = await fetchLeagueTransactions(league_id, week);
 
-        const upcoming_draft = drafts?.find(
-          (x) =>
-            x.draft_order && x.settings.rounds === league.settings.draft_rounds
-        );
+          const upcoming_draft = drafts?.find(
+            (x) =>
+              x.draft_order &&
+              x.settings.rounds === league.settings.draft_rounds
+          );
 
-        tradesBatch.push(
-          ...transactions
-            .filter((t) => t.type === "trade" && t.status === "complete")
-            .map((t) => {
-              const adds = {};
-              const drops = {};
+          tradesBatch.push(
+            ...transactions
+              .filter((t) => t.type === "trade" && t.status === "complete")
+              .map((t) => {
+                const adds = {};
+                const drops = {};
 
-              const price_check = [];
+                const price_check = [];
 
-              const draft_picks = t.draft_picks.map((dp) => {
-                const original_user_id = rosters_w_username.find(
-                  (ru) => ru.roster_id === dp.roster_id
-                )?.user_id;
+                const draft_picks = t.draft_picks.map((dp) => {
+                  const original_user_id = rosters_w_username.find(
+                    (ru) => ru.roster_id === dp.roster_id
+                  )?.user_id;
 
-                const order =
-                  (upcoming_draft?.draft_order &&
-                    parseInt(upcoming_draft.season) === parseInt(dp.season) &&
-                    upcoming_draft.draft_order[original_user_id]) ||
-                  null;
+                  const order =
+                    (upcoming_draft?.draft_order &&
+                      parseInt(upcoming_draft.season) === parseInt(dp.season) &&
+                      upcoming_draft.draft_order[original_user_id]) ||
+                    null;
+
+                  return {
+                    round: dp.round,
+                    season: dp.season,
+                    new: rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.owner_id
+                    )?.user_id,
+                    old: rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.previous_owner_id
+                    )?.user_id,
+                    original: rosters_w_username.find(
+                      (ru) => ru.roster_id === dp.roster_id
+                    )?.user_id,
+                    order: order,
+                  };
+                });
+
+                t.adds &&
+                  Object.keys(t.adds).forEach((add) => {
+                    const manager = rosters_w_username.find(
+                      (ru) => ru.roster_id === t.adds[add]
+                    );
+
+                    adds[add] = manager?.user_id;
+
+                    const count =
+                      Object.keys(t.adds).forEach(
+                        (a) => t.adds[a] === manager?.roster_id
+                      )?.length +
+                      draft_picks.filter(
+                        (dp) => dp.owner_id === manager?.roster_id
+                      )?.length;
+
+                    if (count === 1) {
+                      price_check.push(add);
+                    }
+                  });
+
+                t.drops &&
+                  Object.keys(t.drops).forEach((drop) => {
+                    const manager = rosters_w_username.find(
+                      (ru) => ru.roster_id === t.drops[drop]
+                    );
+
+                    drops[drop] = manager?.user_id;
+                  });
 
                 return {
-                  round: dp.round,
-                  season: dp.season,
-                  new: rosters_w_username.find(
-                    (ru) => ru.roster_id === dp.owner_id
-                  )?.user_id,
-                  old: rosters_w_username.find(
-                    (ru) => ru.roster_id === dp.previous_owner_id
-                  )?.user_id,
-                  original: rosters_w_username.find(
-                    (ru) => ru.roster_id === dp.roster_id
-                  )?.user_id,
-                  order: order,
-                };
-              });
-
-              t.adds &&
-                Object.keys(t.adds).forEach((add) => {
-                  const manager = rosters_w_username.find(
-                    (ru) => ru.roster_id === t.adds[add]
-                  );
-
-                  adds[add] = manager?.user_id;
-
-                  const count =
-                    Object.keys(t.adds).forEach(
-                      (a) => t.adds[a] === manager?.roster_id
-                    )?.length +
-                    draft_picks.filter(
-                      (dp) => dp.owner_id === manager?.roster_id
-                    )?.length;
-
-                  if (count === 1) {
-                    price_check.push(add);
-                  }
-                });
-
-              t.drops &&
-                Object.keys(t.drops).forEach((drop) => {
-                  const manager = rosters_w_username.find(
-                    (ru) => ru.roster_id === t.drops[drop]
-                  );
-
-                  drops[drop] = manager?.user_id;
-                });
-
-              return {
-                ...t,
-                league_id: league.league_id,
-                rosters: rosters_w_username,
-                draft_picks: draft_picks,
-                price_check: price_check,
-                managers: Array.from(
-                  new Set([
-                    ...Object.values(adds || {}),
-                    ...Object.values(drops || {}),
-                    ...draft_picks.map((dp) => dp.new),
-                  ])
-                ),
-                players: [
-                  ...Object.keys(t.adds || {}),
-                  ...draft_picks.map(
-                    (pick) => `${pick.season} ${pick.round}.${pick.order}`
+                  ...t,
+                  league_id: league.league_id,
+                  rosters: rosters_w_username,
+                  draft_picks: draft_picks,
+                  price_check: price_check,
+                  managers: Array.from(
+                    new Set([
+                      ...Object.values(adds || {}),
+                      ...Object.values(drops || {}),
+                      ...draft_picks.map((dp) => dp.new),
+                    ])
                   ),
-                ],
-                adds: adds,
-                drops: drops,
-              };
-            })
-        );
-
+                  players: [
+                    ...Object.keys(t.adds || {}),
+                    ...draft_picks.map(
+                      (pick) => `${pick.season} ${pick.round}.${pick.order}`
+                    ),
+                  ],
+                  adds: adds,
+                  drops: drops,
+                };
+              })
+          );
+        }
         if (league_ids_queue.includes(league_id)) {
           let prev_week = week - 1;
 

@@ -5,12 +5,17 @@ const path = require("path");
 const axios = require("axios");
 
 const getState = async (app) => {
-  const state = await axios.get("https://api.sleeper.app/v1/state/nfl");
+  try {
+    const state = await axios.get("https://api.sleeper.app/v1/state/nfl");
 
-  console.log({ WEEK: state.data.leg });
+    console.log({ WEEK: state.data.leg });
 
-  app.set("state", state.data);
+    app.set("state", state.data);
+  } catch (err) {
+    console.log("Error fetch NFL state: ", err.message);
+  }
 };
+
 module.exports = async (app) => {
   await getState(app);
   setInterval(async () => await getState(app), 3 * 60 * 60 * 1000);
