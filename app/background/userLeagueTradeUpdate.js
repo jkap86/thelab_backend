@@ -21,9 +21,10 @@ module.exports = async (app) => {
   setInterval(async () => await getState(app), 3 * 60 * 60 * 1000);
 
   const startUserUpdateWorker = async (worker) => {
-    console.log("Beginning User Update...");
-
     const state = app.get("state");
+
+    console.log(`Beginning User Update for Week ${state.leg}...`);
+
     const league_ids_queue = app.get("league_ids_queue") || [];
 
     worker.postMessage({ league_ids_queue, state });

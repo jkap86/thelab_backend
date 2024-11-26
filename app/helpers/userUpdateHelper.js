@@ -252,10 +252,11 @@ const updateLeaguesBatch = async (league_ids_batch, week, league_ids_queue) => {
           updatedat: new Date(),
         });
 
+        let upcoming_draft;
         if (league.status === "in_season") {
           const transactions = await fetchLeagueTransactions(league_id, week);
 
-          const upcoming_draft = drafts?.find(
+          upcoming_draft = drafts?.find(
             (x) =>
               x.draft_order &&
               x.settings.rounds === league.settings.draft_rounds
