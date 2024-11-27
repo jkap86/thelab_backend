@@ -119,6 +119,8 @@ const getDailyKtcValues = async () => {
       });
     } catch (err) {
       console.log(err.message);
+    } finally {
+      await page.close();
     }
   }
 
